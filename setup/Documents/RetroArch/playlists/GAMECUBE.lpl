@@ -1,0 +1,151 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+  "default_core_name": "Nintendo - GameCube / Wii (Dolphin)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "GAMECUBE.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Biohazard/Biohazard.m3u",
+      "label": "Biohazard",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Biohazard 4/Biohazard 4.m3u",
+      "label": "Biohazard 4",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Harvest Moon - Another Wonderful Life.rvz",
+      "label": "Harvest Moon - Another Wonderful Life",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Luigi's Mansion.rvz",
+      "label": "Luigi's Mansion",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Mario Kart - Double Dash!!.rvz",
+      "label": "Mario Kart - Double Dash!!",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Mario Tennis GC.rvz",
+      "label": "Mario Tennis GC",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Metroid Prime.rvz",
+      "label": "Metroid Prime",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Metroid Prime 2 - Echoes.rvz",
+      "label": "Metroid Prime 2 - Echoes",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Paper Mario - The Thousand-Year Door.rvz",
+      "label": "Paper Mario - The Thousand-Year Door",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Smash Brothers DX.rvz",
+      "label": "Smash Brothers DX",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Soulcalibur II.rvz",
+      "label": "SoulCalibur II",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Star Wars - Rogue Squadron II - Rogue Leader.rvz",
+      "label": "Star Wars - Rogue Squadron II - Rogue Leader",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Super Mario Strikers.rvz",
+      "label": "Super Mario Strikers",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Super Mario Sunshine.rvz",
+      "label": "Super Mario Sunshine",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/The Legend of Zelda - The Wind Waker.rvz",
+      "label": "The Legend of Zelda - The Wind Waker",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/The Legend of Zelda - Twilight Princess.rvz",
+      "label": "The Legend of Zelda - Twilight Princess",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "GAMECUBE.lpl"
+    }
+  ]
+}

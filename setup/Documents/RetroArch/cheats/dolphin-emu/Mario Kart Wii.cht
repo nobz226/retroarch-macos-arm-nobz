@@ -1,0 +1,6 @@
+cheats = 1
+
+cheat0_desc = "Force 30 FPS"
+cheat0_code = "004250D4 00000002+0029FD69 00000002"
+cheat0_enable = false
+

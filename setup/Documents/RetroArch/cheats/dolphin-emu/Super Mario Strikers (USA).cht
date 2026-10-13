@@ -1,0 +1,22 @@
+cheats = 5
+
+cheat0_desc = "Press D-Pad Up - Team 1 Wins"
+cheat0_code = "4A32C348 00000008+40371238 00003F32+4037123C 00003F00"
+cheat0_enable = false
+
+cheat1_desc = "Press D-Pad Down - Team 2 Wins"
+cheat1_code = "4A32C348 00000004+40371238 00003F00+4037123C 00003F32"
+cheat1_enable = false
+
+cheat2_desc = "Press D-Pad Left To End Match"
+cheat2_code = "0A32C348 00000001+42371238 FFBC4416"
+cheat2_enable = false
+
+cheat3_desc = "Press D-Pad Right For More Time"
+cheat3_code = "0A32C348 00000002+42371238 FFBC0000"
+cheat3_enable = false
+
+cheat4_desc = "Have All Milestone Trophies"
+cheat4_code = "03535D50 0000012C+03535D52 00000064+03535D54 0000012C+03535D56 000003E8+03535D4E 00000064"
+cheat4_enable = false
+

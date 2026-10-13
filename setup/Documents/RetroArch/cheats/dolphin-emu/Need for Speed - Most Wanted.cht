@@ -1,0 +1,6 @@
+cheats = 1
+
+cheat0_desc = "Unlock Black Edition"
+cheat0_code = "0441EECC 00000001"
+cheat0_enable = false
+

@@ -1,0 +1,154 @@
+cheats = 38
+
+cheat0_desc = "Open all levels and nozzles"
+cheat0_code = "04570958 FFFFFFFF+0457095C FFFFFFFF"
+cheat0_enable = false
+
+cheat1_desc = "8 Red Coins on Gain"
+cheat1_code = "041BE42C 38A00008"
+cheat1_enable = false
+
+cheat2_desc = "Infinite hover time"
+cheat2_code = "042640BC 60000000"
+cheat2_enable = false
+
+cheat3_desc = "Infinite health"
+cheat3_code = "04243838 3BE00000"
+cheat3_enable = false
+
+cheat4_desc = "Infinite Jetpack"
+cheat4_code = "0426C330 60000000"
+cheat4_enable = false
+
+cheat5_desc = "Infinite Hose"
+cheat5_code = "0426B9C8 60000000"
+cheat5_enable = false
+
+cheat6_desc = "Infinite Lives"
+cheat6_code = "04578A04 00000063"
+cheat6_enable = false
+
+cheat7_desc = "Super Jump"
+cheat7_code = "0A404454 00000100+4240E12C 05003DC0+12404454 00000100+4240E12C 05003E80"
+cheat7_enable = false
+
+cheat8_desc = "99 lives"
+cheat8_code = "00570967 00000063"
+cheat8_enable = false
+
+cheat9_desc = "Test Level"
+cheat9_code = "043E9710 00000C01"
+cheat9_enable = false
+
+cheat10_desc = "Low Gravity"
+cheat10_code = "4240E12C 05003E00"
+cheat10_enable = false
+
+cheat11_desc = "Do Not Have To Move Before Triple Jump"
+cheat11_code = "4240E10C 06B00000"
+cheat11_enable = false
+
+cheat12_desc = "Spin Jump Gravity - Really Slow Fall"
+cheat12_code = "4240E10C 058E3D00"
+cheat12_enable = false
+
+cheat13_desc = "Spin Jump Gravity - Almost No Fall"
+cheat13_code = "4240E10C 058E0000"
+cheat13_enable = false
+
+cheat14_desc = "Spin Jump Gravity - Fall Really Fast"
+cheat14_code = "4240E10C 058E4200"
+cheat14_enable = false
+
+cheat15_desc = "Spin Jump Gravity - Normal Speed"
+cheat15_code = "4240E10C 058E3EB3"
+cheat15_enable = false
+
+cheat16_desc = "Insane heat waves Crazy colors everywhere!"
+cheat16_code = "043AA070 41200000"
+cheat16_enable = false
+
+cheat17_desc = "Double vision heat wave (narrow)"
+cheat17_code = "043AA070 3F600000"
+cheat17_enable = false
+
+cheat18_desc = "Double vision heat wave (wide)"
+cheat18_code = "043AA070 3F400000"
+cheat18_enable = false
+
+cheat19_desc = "Use only one of following two. Vanish point visual distortion"
+cheat19_code = "043AB304 3E000000"
+cheat19_enable = false
+
+cheat20_desc = "Hard to select file, activators will work if you add them.. Camera is far out"
+cheat20_code = "043AB304 3F000000"
+cheat20_enable = false
+
+cheat21_desc = "X textures"
+cheat21_code = "043DB210 41200000"
+cheat21_enable = false
+
+cheat22_desc = "Y textures"
+cheat22_code = "043DB224 41200000"
+cheat22_enable = false
+
+cheat23_desc = "Z textures"
+cheat23_code = "043DB238 41200000"
+cheat23_enable = false
+
+cheat24_desc = "Strangely distorted people"
+cheat24_code = "0440CC24 3F900000"
+cheat24_enable = false
+
+cheat25_desc = "Mute game"
+cheat25_code = "04417248 00000000"
+cheat25_enable = false
+
+cheat26_desc = "Magnify camera"
+cheat26_code = "04417690 3F900000"
+cheat26_enable = false
+
+cheat27_desc = "Warped camera view"
+cheat27_code = "044176A8 3E000000"
+cheat27_enable = false
+
+cheat28_desc = "Poorly Shaded Mario"
+cheat28_code = "044176FC 00000000"
+cheat28_enable = false
+
+cheat29_desc = "Always Green Yoshi"
+cheat29_code = "405F3A90 04AE4C00"
+cheat29_enable = false
+
+cheat30_desc = "Hold B To Run Super Fast"
+cheat30_code = "0A404454 00000200+4240E12C 06E44200+12404454 00000200+4240E12C 06E43F80"
+cheat30_enable = false
+
+cheat31_desc = "D-Pad Up For Large Mario"
+cheat31_code = "8A404454 00000008+4240E12C 4DE43FF8+4240E12C 4DE63FF8+4240E12C 4DE83FF8+00000000 40000000"
+cheat31_enable = false
+
+cheat32_desc = "D-Pad Down For Mini Mario"
+cheat32_code = "8A404454 00000004+4240E12C 4DE43E88+4240E12C 4DE63E88+4240E12C 4DE83E88+00000000 40000000"
+cheat32_enable = false
+
+cheat33_desc = "D-Pad Left For Normal Mario"
+cheat33_code = "8A404454 00000004+4240E12C 4DE43F80+4240E12C 4DE63F80+4240E12C 4DE83F80+00000000 40000000"
+cheat33_enable = false
+
+cheat34_desc = "Improved Jesus Mode A.K.A Walk on Water DPad Up/Down = On/Off"
+cheat34_code = "28404454 FFF70008+C224F134 0000000A+A8030000 2C000101+4082000C 60008000+B0030000 2C000102+4082000C 60008000+B0030000 2C000103+4082000C 60008000+B0030000 2C000100+4082000C 60008000+B0030000 7C030378+60000000 00000000+E2000001 80008000+28404454 FFFB0004+0424F134 A0630000+E2000001 80008000"
+cheat34_enable = false
+
+cheat35_desc = "Infinite Water"
+cheat35_code = "C2141DD8 00000002+3B002710 93131C80+60000000 00000000"
+cheat35_enable = false
+
+cheat36_desc = "Widescreen"
+cheat36_code = "04416758 44480000+044123E8 442F0000+04416620 442F0000+04176AA4 C002B83C+0429B974 C002B83C+04176C40 C002B83C+04176FF4 C002B83C+04177198 C002B83C+04412408 3FE38E39+04416B74 3F9A7643+0429610C 380002EA+042960A0 3860FF96+C214EF74 00000002+3B20FFA9 93380004+931F0140 00000000+C214EE24 00000002+3B20FFA9 93380004+931F0108 00000000+C214F09C 00000002+3860FFA9 90780004+931F0160 00000000+C214F308 00000002+3BA00251 93B80004+931F02F8 00000000+C214F70C 00000002+3860FFA9 90780004+931F0400 00000000+C214F830 00000002+3860FFA9 90780004+931F042C 00000000+C214F93C 00000002+3860FFA9 90780004+931F0450 00000000+C214D8EC 00000002+38800251 9081056C+807F02A0 00000000+0414E7D4 3880023C+C22CB330 00000004+2C00019F 40820008+38000203 2C00018D+40820008 380001F1+901F0014 00000000+C2156004 00000004+809F0018 38A0EC78+90A40014 7CA500D0+90A4001C 38800000+60000000 00000000+C214F114 00000002+3BA00258 93B80004+931F01C4 00000000+C2363138 00000009+80ED8D08 800701E8+540C24B6 2C030000+41820030 7C032A14+7C006000 41820024+5580F87E 7C601850+1C630003 1CA50003+7C631670 54A5F0BE+7C630194 7C630214+60000000 00000000"
+cheat36_enable = false
+
+cheat37_desc = "60FPS"
+cheat37_code = "044167B8 3F800000+042FCB24 60000000+04414904 3CA3D70A+C20066EC 00000002+C2C28028 EC2105B2+FEC00890 00000000"
+cheat37_enable = false
+

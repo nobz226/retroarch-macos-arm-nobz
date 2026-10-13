@@ -1,0 +1,74 @@
+gametitle=Jak 3 (NTSC-U) [SCUS-97330]
+
+// Frame-rate caps for Jak 3, found in RAM from a savestate of the SCUS-97330 (CRC 644CFD03) disc.
+//
+// Addressing: the kernel global at 0x001297A8 holds the symbol table base (symbol_table+5).
+// display-sync's value slot is that + 0xE2BF; its value is the function's code. Each patch is a
+// PCSX2 pointer code, so it skips itself until the game has loaded display-sync (slot still 0).
+//
+// display-sync already holds a frame until it has taken as long as the last one (dog-ratio), then
+// reports the time that passed to the game's clocks - except that after waiting it reports 1.0.
+// The caps fix the wait target at T vsyncs and keep the measured time, so game speed stays right:
+//   +0x108  lui 1.0 -> T   (fmax 1.0 dog-ratio)      floor of the wait target
+//   +0x110  lui 4.0 -> T   (fmin 4.0 dog-ratio)      ceiling: target is exactly T, no ratchet after a slow frame
+//   +0x204  lui 1.0 -> T   (< 1.0 ratio)             frames already slower than T are not held
+//   +0x284  c.eq.s f30,f0 -> c.olt.s f30,f26         hold any frame shorter than T, not only exact-1.0 ones
+//   +0x314  mtc1 v1,f30 -> nop                       keep the measured ratio instead of 1.0 after waiting
+// Use one cap at a time. Switching one off needs a reboot (the code stays patched until then).
+
+[Perf - 30 FPS Cap]
+author=jak-series perf pack
+description=Caps the game at ~30 fps through the engine's own frame pacer: every frame is held until 2.0 vsyncs have passed, and the game's clocks advance by the measured time, so game speed stays correct. Use one cap at a time; switching it off needs a reboot.
+patch=1,EE,601297A8,extended,3C034000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000108,extended,00000000
+patch=1,EE,601297A8,extended,3C034000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000110,extended,00000000
+patch=1,EE,601297A8,extended,3C034000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000204,extended,00000000
+patch=1,EE,601297A8,extended,461AF034
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000284,extended,00000000
+patch=1,EE,601297A8,extended,00000000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000314,extended,00000000
+
+[Perf - 45 FPS Cap]
+author=jak-series perf pack
+description=Caps the game at ~45 fps through the engine's own frame pacer: every frame is held until 1.328 vsyncs have passed, and the game's clocks advance by the measured time, so game speed stays correct. Use one cap at a time; switching it off needs a reboot.
+patch=1,EE,601297A8,extended,3C033FAA
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000108,extended,00000000
+patch=1,EE,601297A8,extended,3C033FAA
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000110,extended,00000000
+patch=1,EE,601297A8,extended,3C033FAA
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000204,extended,00000000
+patch=1,EE,601297A8,extended,461AF034
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000284,extended,00000000
+patch=1,EE,601297A8,extended,00000000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000314,extended,00000000
+
+[Perf - 50 FPS Cap]
+author=jak-series perf pack
+description=Caps the game at ~50 fps through the engine's own frame pacer: every frame is held until 1.195 vsyncs have passed, and the game's clocks advance by the measured time, so game speed stays correct. Use one cap at a time; switching it off needs a reboot.
+patch=1,EE,601297A8,extended,3C033F99
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000108,extended,00000000
+patch=1,EE,601297A8,extended,3C033F99
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000110,extended,00000000
+patch=1,EE,601297A8,extended,3C033F99
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000204,extended,00000000
+patch=1,EE,601297A8,extended,461AF034
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000284,extended,00000000
+patch=1,EE,601297A8,extended,00000000
+patch=1,EE,00020002,extended,0000E2BF
+patch=1,EE,00000314,extended,00000000

@@ -1,0 +1,6 @@
+cheats = 1
+
+cheat0_desc = "16:9 Aspect Ratio Fix"
+cheat0_code = "048E7B48 3FE38E39+048E9048 3FE38E39+048E8448 3FE38E39"
+cheat0_enable = false
+

@@ -1,0 +1,6 @@
+cheats = 1
+
+cheat0_desc = "60FPS"
+cheat0_code = "04158204 60000000"
+cheat0_enable = false
+

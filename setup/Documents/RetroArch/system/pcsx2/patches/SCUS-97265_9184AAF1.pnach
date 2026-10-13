@@ -1,0 +1,73 @@
+gametitle=Jak II (NTSC-U) [SCUS-97265]
+
+// Performance patches for Jak II, built statically from the SCUS-97265 ELF and GAME.CGO.
+//
+// Addressing: the kernel global SymbolTable2 (0x001285AC, from the ELF symbol table)
+// holds symbol_table+5, and s7 = symbol_table+0x8001. GOAL places a symbol's value
+// slot at s7 + hash_slot - 1, with the slot taken from the CRC32 of its name:
+//   *display*          crc A5CF2F15 -> slot s7+0x78A8 -> value at [SymbolTable2]+0xF8A3
+//   *setting-control*  crc 54648BBB -> slot s7+0x5DD8 -> value at [SymbolTable2]+0xDDD3
+// Nothing that loads earlier in KERNEL.CGO / GAME.CGO hashes to either slot, so no
+// collision moves them.
+// Each patch is a PCSX2 pointer code: it skips itself while a pointer is still null
+// (before the kernel / engine has created the object), so nothing is written during boot.
+
+[Perf - No Depth-Cue Blur]
+author=jak-series perf pack
+description=Skips the full-screen depth-cue (distance blur) pass. Clears bit 34 of *display* vu1-enable-user-menu (16-bit write of 0x0001 over the default 0x0005).
+// *display* +0x90 = upper halfword of vu1-enable-user-menu (field offset 144, basic pointer +4)
+patch=1,EE,601285AC,extended,00000001
+patch=1,EE,00010002,extended,0000F8A3
+patch=1,EE,00000090,extended,00000000
+
+[Perf - 30 FPS Lock]
+author=jak-series perf pack
+description=Turns on the engine's own half-speed mode: two vsyncs per frame with a doubled timestep, so the game runs at normal speed at a steady 30 fps with about half the GS/VU1 work.
+// *setting-control* user-default.half-speed (field offset 1072 + 292, basic pointer +4 -> +0x550).
+// The engine only checks this flag against #f (s7, always 1 mod 16), so any other value means "on".
+// It is copied to *display* run-half-speed every frame.
+patch=1,EE,601285AC,extended,00008005
+patch=1,EE,00020002,extended,0000DDD3
+patch=1,EE,00000550,extended,00000000
+
+[Perf - 45 FPS Cap]
+author=jak-series perf pack
+description=Caps the game at ~45 fps through the engine's own frame pacer in display-sync: every frame is held until 1.328 vsyncs have passed, and the game's clocks advance by the measured time, so game speed stays correct. Use one cap at a time; the 30 FPS Lock overrides it. Takes effect live; switching it off needs a reboot (the code stays patched).
+// display-sync = value of its symbol, [SymbolTable2 (0x001285AC)] + 0x357F. Four lui immediates in it:
+//   +0x0CC  (fmax 1.0 dog-ratio)        1.0 -> 1.328  floor of the frame wait target
+//   +0x0D4  (fmin 4.0 dog-ratio)        4.0 -> 1.328  ceiling, so the target is exactly 1.328 (no ratchet after a slow frame)
+//   +0x1B8  (< 1.0 frame-time-ratio)    1.0 -> 1.328  frames under 1.328 vsyncs get held too
+//   +0x3D0  (set! dog-count 1.0)        1.0 -> 0.0   hold every frame, not every other one
+patch=1,EE,601285AC,extended,3C053FAA
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000000CC,extended,00000000
+patch=1,EE,601285AC,extended,3C053FAA
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000000D4,extended,00000000
+patch=1,EE,601285AC,extended,3C053FAA
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000001B8,extended,00000000
+patch=1,EE,601285AC,extended,3C030000
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000003D0,extended,00000000
+
+[Perf - 50 FPS Cap]
+author=jak-series perf pack
+description=Caps the game at ~50 fps through the engine's own frame pacer in display-sync: every frame is held until 1.195 vsyncs have passed, and the game's clocks advance by the measured time, so game speed stays correct. Use one cap at a time; the 30 FPS Lock overrides it. Takes effect live; switching it off needs a reboot (the code stays patched).
+// display-sync = value of its symbol, [SymbolTable2 (0x001285AC)] + 0x357F. Four lui immediates in it:
+//   +0x0CC  (fmax 1.0 dog-ratio)        1.0 -> 1.195  floor of the frame wait target
+//   +0x0D4  (fmin 4.0 dog-ratio)        4.0 -> 1.195  ceiling, so the target is exactly 1.195 (no ratchet after a slow frame)
+//   +0x1B8  (< 1.0 frame-time-ratio)    1.0 -> 1.195  frames under 1.195 vsyncs get held too
+//   +0x3D0  (set! dog-count 1.0)        1.0 -> 0.0   hold every frame, not every other one
+patch=1,EE,601285AC,extended,3C053F99
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000000CC,extended,00000000
+patch=1,EE,601285AC,extended,3C053F99
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000000D4,extended,00000000
+patch=1,EE,601285AC,extended,3C053F99
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000001B8,extended,00000000
+patch=1,EE,601285AC,extended,3C030000
+patch=1,EE,00020002,extended,0000357F
+patch=1,EE,000003D0,extended,00000000

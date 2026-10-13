@@ -1,0 +1,72 @@
+gametitle=God of War II [SCUS-97481] (U)
+
+// Performance patch for God of War II (NTSC-U, CRC 2F123FD8), for pcee2 / PCSX2.
+// It changes no graphics, frame rate or game logic: only how the game waits.
+// Every address and original instruction was checked against the disc's SCUS_974.81 (disc version 1.01).
+// Address -> file offset in the ELF: offset = address - 0x100000 + 0x1000.
+// Not runtime-tested yet.
+//
+// This is a labelled patch, so it is off until enabled. Enable it in
+// <system>/pcsx2/gamesettings/SCUS-97481_2F123FD8.ini:
+//   [Patches]
+//   Enable = Emulator-Friendly Waits
+// The bundled patches for this game (Widescreen 16:9, Skip Cutscenes, High-Res Mode)
+// keep working alongside this file; their names are not reused here.
+
+[Emulator-Friendly Waits]
+description=Lets the emulator skip the time the game spends waiting for vblank / the GS, instead of emulating its delay loops. Same game behaviour, less host CPU.
+author=Generated from disassembly of SCUS_974.81
+
+// The game waits for vblank and for the GS with polls wrapped in 2000/20000-iteration
+// countdown delay loops (addiu v0,v0,-1 + 4 nops). The recompiler's wait-loop detection
+// (Speedhacks.WaitLoop, on by default) rejects loops with a counter, so every wait is
+// emulated instruction by instruction. Each patch below rewrites one wait as a plain
+// poll (load, compare, branch back to itself), which the recompiler detects and
+// fast-forwards to the next event (the vblank or GS interrupt that ends the wait).
+// The exit conditions and the registers left for the code after each wait are unchanged.
+// patch=0: applied once when the game's ELF loads, before the code runs.
+
+// 1. Frame vsync wait (0x186D38), wait until vblank counter 0x2D8108 >= target:
+//    186D64: lw v0,-0x7EF8(a1) / slt v0,v0,a0 / bne v0,zero,186D64 / nop / b 186DF8 / lui v0,0x2E
+patch=0,EE,00186D64,word,8CA28108
+patch=0,EE,00186D68,word,0044102A
+patch=0,EE,00186D6C,word,1440FFFD
+patch=0,EE,00186D70,word,00000000
+patch=0,EE,00186D74,word,10000020
+patch=0,EE,00186D78,word,3C02002E
+
+// 2. Frame vsync wait, "frame ran late, wait one more vblank" branch:
+//    186DBC: lw v0,-0x7EF8(a1) / slt v0,v0,v1 / bne v0,zero,186DBC / nop / b 186DF4 / nop
+patch=0,EE,00186DBC,word,8CA28108
+patch=0,EE,00186DC0,word,0043102A
+patch=0,EE,00186DC4,word,1440FFFD
+patch=0,EE,00186DC8,word,00000000
+patch=0,EE,00186DCC,word,10000009
+patch=0,EE,00186DD0,word,00000000
+
+// 3. End of frame (0x186E08): wait until the GS has finished the previous frame (0x2D8104 != 1):
+//    186E90: li v0,1 / lw v1,-0x7EFC(a2) / beq v1,v0,186E94 / nop / b 186EC8 / nop
+patch=0,EE,00186E90,word,24020001
+patch=0,EE,00186E94,word,8CC38104
+patch=0,EE,00186E98,word,1062FFFE
+patch=0,EE,00186E9C,word,00000000
+patch=0,EE,00186EA0,word,10000009
+patch=0,EE,00186EA4,word,00000000
+
+// 4. Flip lock wait (0x18ADD0, 6 callers), same GS-finished condition:
+//    18ADE4: li v0,1 / lw v1,-0x7EFC(a0) / beq v1,v0,18ADE8 / nop / jr ra / li v0,0x4E20
+patch=0,EE,0018ADE4,word,24020001
+patch=0,EE,0018ADE8,word,8C838104
+patch=0,EE,0018ADEC,word,1062FFFE
+patch=0,EE,0018ADF0,word,00000000
+patch=0,EE,0018ADF4,word,03E00008
+patch=0,EE,0018ADF8,word,24024E20
+
+// 5. Wait-N-vblanks helper (0x25F988, 2 callers):
+//    25F9A4: lw v0,-0x7EF8(a1) / slt v0,v0,v1 / bne v0,zero,25F9A4 / nop / jr ra / li v0,0x4E20
+patch=0,EE,0025F9A4,word,8CA28108
+patch=0,EE,0025F9A8,word,0043102A
+patch=0,EE,0025F9AC,word,1440FFFD
+patch=0,EE,0025F9B0,word,00000000
+patch=0,EE,0025F9B4,word,03E00008
+patch=0,EE,0025F9B8,word,24024E20

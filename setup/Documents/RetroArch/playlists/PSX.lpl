@@ -1,0 +1,103 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+  "default_core_name": "Sony - PlayStation (SwanStation)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/PSX",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "PSX.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Ace Combat 3 - Electrosphere/Ace Combat 3 - Electrosphere.m3u",
+      "label": "Ace Combat 3 - Electrosphere",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Ape Escape.chd",
+      "label": "Ape Escape",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Biohazard 2/Biohazard 2.m3u",
+      "label": "Biohazard 2",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Biohazard 3 - Last Escape.chd",
+      "label": "Biohazard 3 - Last Escape",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Crash Bandicoot.chd",
+      "label": "Crash Bandicoot",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Metal Gear Solid - Integral/Metal Gear Solid - Integral.m3u",
+      "label": "Metal Gear Solid - Integral",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/R4 - Ridge Racer Type 4.chd",
+      "label": "R4 - Ridge Racer Type 4",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Spyro The Dragon.chd",
+      "label": "Spyro The Dragon",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Tekken 3.chd",
+      "label": "Tekken 3",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/WipEout 3 - Special Edition.chd",
+      "label": "WipEout 3 - Special Edition",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    }
+  ]
+}

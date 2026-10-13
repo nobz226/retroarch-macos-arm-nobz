@@ -1,0 +1,71 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+  "default_core_name": "Arcade (FinalBurn Neo)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/CPS",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "CPS.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/avspj.7z",
+      "label": "Alien vs. Predator",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+      "core_name": "Arcade (FinalBurn Neo)",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/mvscj.7z",
+      "label": "Marvel vs. Capcom - Clash of Super Heroes",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+      "core_name": "Arcade (FinalBurn Neo)",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/sfiii3n.zip",
+      "label": "Street Fighter III 3rd Strike - Fight for the Future",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+      "core_name": "Arcade (FinalBurn Neo)",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/sfz2alj.7z",
+      "label": "Street Fighter Zero 2 - Alpha",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+      "core_name": "Arcade (FinalBurn Neo)",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/punisherj.7z",
+      "label": "The Punisher",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/vsavj.7z",
+      "label": "Vampire Savior - The Lord of Vampire",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "CPS.lpl"
+    }
+  ]
+}

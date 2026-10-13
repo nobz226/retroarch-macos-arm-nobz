@@ -1,0 +1,55 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/parallel_n64_libretro.dylib",
+  "default_core_name": "Nintendo - Nintendo 64 (ParaLLEl N64)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/N64",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "N64.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/N64/Conker's Bad Fur Day.z64",
+      "label": "Conker's Bad Fur Day",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/parallel_n64_libretro.dylib",
+      "core_name": "Nintendo - Nintendo 64 (ParaLLEl N64)",
+      "crc32": "00000000|crc",
+      "db_name": "N64.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/N64/Super Mario 64.z64",
+      "label": "Super Mario 64",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/parallel_n64_libretro.dylib",
+      "core_name": "Nintendo - Nintendo 64 (ParaLLEl N64)",
+      "crc32": "00000000|crc",
+      "db_name": "N64.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/N64/The Legend of Zelda - Majora's Mask.z64",
+      "label": "The Legend of Zelda - Majora's Mask",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/parallel_n64_libretro.dylib",
+      "core_name": "Nintendo - Nintendo 64 (ParaLLEl N64)",
+      "crc32": "00000000|crc",
+      "db_name": "N64.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/N64/The Legend of Zelda - Ocarina of Time.z64",
+      "label": "The Legend of Zelda - Ocarina of Time",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/parallel_n64_libretro.dylib",
+      "core_name": "Nintendo - Nintendo 64 (ParaLLEl N64)",
+      "crc32": "00000000|crc",
+      "db_name": "N64.lpl"
+    }
+  ]
+}

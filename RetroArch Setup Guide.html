@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RetroArch Setup Guide</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#5f5f66;--card:#ffffff;--line:#e3e1dc;--accent:#2f5bd3;--ok:#1e7a3c;--warn:#a65b00;--code:#f1efe9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151517;--fg:#ececef;--muted:#a2a2aa;--card:#1e1e22;--line:#33333a;--accent:#8aa8ff;--ok:#6fd38f;--warn:#f0b35a;--code:#26262b}}
+:root[data-theme="dark"]{--bg:#151517;--fg:#ececef;--muted:#a2a2aa;--card:#1e1e22;--line:#33333a;--accent:#8aa8ff;--ok:#6fd38f;--warn:#f0b35a;--code:#26262b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 6px}
+h2{font-size:1.35rem;margin:44px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:24px 0 6px}
+p,li{color:var(--fg)}
+.lead{color:var(--muted);font-size:1.05rem;margin:0 0 20px}
+a{color:var(--accent)}
+code,kbd{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:.88em;background:var(--code);border-radius:5px;padding:1px 5px}
+kbd{border:1px solid var(--line);box-shadow:0 1px 0 var(--line)}
+pre{background:var(--code);border-radius:8px;padding:12px 14px;overflow-x:auto;font-size:.88em;line-height:1.5}
+pre code{background:none;padding:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
+.tip{border-left:4px solid var(--ok)}
+.warn{border-left:4px solid var(--warn)}
+.card p:first-child{margin-top:0}.card p:last-child{margin-bottom:0}
+ol.steps{padding-left:1.3em}ol.steps>li{margin:10px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.95rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.wrap{overflow-x:auto}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 18px}
+nav.toc ol{margin:6px 0;padding-left:1.3em}
+.small{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>RetroArch Setup Guide</h1>
+<p class="lead">How to install this ready-made RetroArch setup on a Mac with Apple Silicon (M1, M2, M3, M4 or newer), where your games go, and how to tweak it.</p>
+
+<nav class="toc"><strong>Contents</strong>
+<ol>
+<li><a href="#need">What you need</a></li>
+<li><a href="#install">Install in five minutes</a></li>
+<li><a href="#drive">Your games drive</a></li>
+<li><a href="#play">Playing: menu, saves and keys</a></li>
+<li><a href="#systems">Systems and emulators</a></li>
+<li><a href="#ps2">PS2 games: patches and per-game settings</a></li>
+<li><a href="#options">Changing options safely</a></li>
+<li><a href="#games">Adding new games</a></li>
+<li><a href="#trouble">Troubleshooting</a></li>
+<li><a href="#folders">Where everything lives</a></li>
+</ol></nav>
+
+<h2 id="need">1. What you need</h2>
+<ul>
+<li>A Mac with an <strong>Apple Silicon</strong> chip. Check under  menu → About This Mac: it should say "Apple M1/M2/M3/M4…". Intel Macs are not supported.</li>
+<li>The <strong>RetroArch.dmg</strong> disk image this guide came with (about 1.5 GB).</li>
+<li>An <strong>external drive</strong> (SSD recommended) with your games in a folder called <code>Games/RetroArch/roms</code>. The drive can have any name. See <a href="#drive">section 3</a>.</li>
+<li>A game controller is optional but recommended. Xbox, PlayStation and most Bluetooth/USB pads work out of the box.</li>
+</ul>
+
+<h2 id="install">2. Install in five minutes</h2>
+<div class="card warn"><p><strong>Do this on a Mac that has never run RetroArch</strong>, or on a new macOS user account. The setup only installs itself when there is no RetroArch configuration yet, so it never overwrites an existing one.</p></div>
+<ol class="steps">
+<li><strong>Open the disk image.</strong> Double-click <code>RetroArch.dmg</code>. A window opens with RetroArch, an Applications folder and this guide.</li>
+<li><strong>Drag RetroArch onto Applications.</strong> Wait for the copy to finish, then eject the disk image.</li>
+<li><strong>Plug in your games drive.</strong></li>
+<li><strong>Open RetroArch the first time (this step matters).</strong> This build isn't from the App Store, so macOS blocks a normal double-click the first time:
+<ul>
+<li>In Applications, <strong>right-click (or Control-click) RetroArch → Open</strong>, then click <strong>Open</strong> in the warning.</li>
+<li>If there's no Open button: open <strong>System Settings → Privacy &amp; Security</strong>, scroll down to the message about RetroArch, and click <strong>Open Anyway</strong>.</li>
+</ul></li>
+<li><strong>Allow access when asked.</strong> macOS asks whether RetroArch may use your <strong>Documents</strong> folder and <strong>removable volumes</strong> (your drive). Click <strong>Allow</strong> both times; without it RetroArch can't find its settings or your games.</li>
+<li><strong>Wait about a minute.</strong> The first launch quietly copies the whole setup (about 1.6 GB) into place: emulators, BIOS files, settings, artwork, playlists and saved games. Nothing shows on screen while it works; then the menu appears with your game library. Later launches are instant.</li>
+</ol>
+<div class="card tip"><p><strong>Done.</strong> From now on, open RetroArch normally from Applications or the Dock.</p></div>
+<p class="small">What the first launch installs: <code>~/Library/Application Support/RetroArch</code> (emulators, settings, artwork, shaders, overlays, controller profiles) and <code>~/Documents/RetroArch</code> (BIOS/system files, playlists, saved games). It never replaces a file that's already there.</p>
+
+<h2 id="drive">3. Your games drive</h2>
+<p>RetroArch looks for games in <strong><code>&lt;your drive&gt;/Games/RetroArch/roms</code></strong>, on <em>any</em> connected external drive. Name the drive whatever you like. If you swap drives or rename one, RetroArch finds the folder on whichever drive has it.</p>
+<p>Inside <code>roms</code>, use one folder per system. These names must match exactly:</p>
+<pre><code>&lt;your drive&gt;/
+└── Games/
+    └── RetroArch/
+        └── roms/
+            ├── CPS/          Capcom arcade (FinalBurn Neo)
+            ├── DREAMCAST/    Sega Dreamcast
+            ├── GAMECUBE/     Nintendo GameCube
+            ├── N64/          Nintendo 64
+            ├── NEOGEO/       Neo Geo arcade (FinalBurn Neo)
+            ├── PS2/          PlayStation 2
+            ├── PSX/          PlayStation
+            ├── SNES/         Super Nintendo
+            └── Wii/          Nintendo Wii</code></pre>
+<div class="card tip"><p><strong>Keep file names unchanged.</strong> The playlists, artwork and per-game settings are matched to the exact file names. If you rename a game file, its playlist entry stops working until you scan again (see <a href="#games">section 8</a>).</p></div>
+<div class="card"><p><strong>Games that span several discs</strong> (for example Onimusha: Dawn of Dreams, Metal Gear Solid 3, Biohazard 4) sit in their own folder with an <code>.m3u</code> file listing the discs. Start the game from the <code>.m3u</code> entry. When the game asks for the next disc: <strong>Quick Menu → Disc Control → Eject</strong>, pick the next disc, then <strong>Insert</strong>.</p></div>
+
+<h2 id="play">4. Playing: menu, saves and keys</h2>
+<h3>Starting a game</h3>
+<p>Each system has a playlist in the main menu (scroll left/right). Pick a game and choose <strong>Run</strong>. The right emulator is already chosen.</p>
+<h3>Keyboard shortcuts (set up in this configuration)</h3>
+<div class="wrap"><table>
+<tr><th>Key</th><th>What it does</th></tr>
+<tr><td><kbd>\</kbd> (backslash)</td><td>Open or close the <strong>Quick Menu</strong> during a game</td></tr>
+<tr><td><kbd>5</kbd> on the number pad</td><td>Save a <strong>savestate</strong> to the current slot</td></tr>
+<tr><td><kbd>9</kbd> on the number pad</td><td>Load the savestate from the current slot</td></tr>
+<tr><td><kbd>7</kbd> / <kbd>8</kbd> on the number pad</td><td>Previous / next savestate slot</td></tr>
+<tr><td><kbd>P</kbd></td><td>Pause</td></tr>
+<tr><td><kbd>F</kbd></td><td>Toggle fullscreen</td></tr>
+<tr><td><kbd>N</kbd></td><td>Switch to the next disc (multi-disc games)</td></tr>
+<tr><td><kbd>[</kbd></td><td>Reset the game</td></tr>
+<tr><td><kbd>]</kbd></td><td>Close the game</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Quit RetroArch</td></tr>
+</table></div>
+<div class="card tip"><p><strong>Open the menu from a controller:</strong> there's no controller shortcut yet. Set one in <strong>Settings → Input → Hotkeys → Menu Toggle (Controller Combo)</strong>, for example <em>L3 + R3</em> or <em>Hold Start</em>. Then choose <strong>Main Menu → Configuration File → Save Current Configuration</strong>.</p></div>
+<h3>Two kinds of saves</h3>
+<ul>
+<li><strong>In-game saves</strong> (memory card, save points): work exactly like on the console. They're included in this setup, so your progress carries over.</li>
+<li><strong>Savestates</strong>: a snapshot of the exact moment, saved and loaded with the keys above. Handy, but keep using in-game saves too: a savestate can carry odd states forward, and changing a game's frame-rate patch can make an old savestate behave strangely.</li>
+</ul>
+<p class="small">Savestates from the original Mac are <strong>not</strong> included; in-game saves are.</p>
+
+<h2 id="systems">5. Systems and emulators</h2>
+<div class="wrap"><table>
+<tr><th>Folder</th><th>System</th><th>Emulator (core)</th><th>Notes</th></tr>
+<tr><td>PS2</td><td>PlayStation 2</td><td>PCEE2</td><td>A custom build with Apple GPU fixes. Most games use the <strong>Metal</strong> renderer; Need for Speed: Most Wanted uses Vulkan. See <a href="#ps2">section 6</a>.</td></tr>
+<tr><td>GAMECUBE, Wii</td><td>GameCube and Wii</td><td>Dolphin</td><td>A custom build, renderer "Hardware" (Vulkan), the best balance on Apple GPUs. Wii games use the controller as the Wii Remote, with the pointer on an analog stick (adjust under Core Options → Wii Remote / IR if aiming feels off).</td></tr>
+<tr><td>PSX</td><td>PlayStation</td><td>SwanStation</td><td>Very accurate; multi-disc games use <code>.m3u</code> files.</td></tr>
+<tr><td>N64</td><td>Nintendo 64</td><td>ParaLLEl N64</td><td>Graphics plugin GLideN64. Save often in Conker's Bad Fur Day: it can crash after long sessions.</td></tr>
+<tr><td>DREAMCAST</td><td>Dreamcast</td><td>Flycast</td><td></td></tr>
+<tr><td>SNES</td><td>Super Nintendo</td><td>bsnes</td><td>Cycle-accurate.</td></tr>
+<tr><td>CPS, NEOGEO</td><td>Arcade</td><td>FinalBurn Neo</td><td>Keep the <code>.zip</code>/<code>.7z</code> files as they are; don't unpack them.</td></tr>
+</table></div>
+<p>BIOS and system files for every system are included and installed automatically.</p>
+
+<h2 id="ps2">6. PS2 games: patches and per-game settings</h2>
+<p>PS2 games get extra tuning through two kinds of files in <code>~/Documents/RetroArch/system/pcsx2/</code>:</p>
+<ul>
+<li><strong><code>gamesettings/&lt;SERIAL&gt;_&lt;CRC&gt;.ini</code></strong>: settings for one game. Every file explains itself in plain comments: what each line does, which fixes PCSX2 applies automatically, and which patches exist for that game. Open one in TextEdit and read the top.</li>
+<li><strong><code>patches/*.pnach</code></strong>: custom patches made for this setup (for example the Jak II/Jak 3 frame-rate caps and the Black 45 fps patch). Most other patches come built into the emulator.</li>
+</ul>
+<h3>Patches that are on</h3>
+<div class="wrap"><table>
+<tr><th>Game</th><th>Active patches</th></tr>
+<tr><td>Jak II, Jak 3</td><td>45 FPS cap (custom; game speed stays correct). 30 and 50 caps are also available.</td></tr>
+<tr><td>Kingdom Hearts Final Mix, Kingdom Hearts II Final Mix+</td><td>60 FPS (KH1 also: HP/MP fix)</td></tr>
+<tr><td>GTA III, Vice City, San Andreas</td><td>60 FPS. In San Andreas, if swimming, flying or the train mission behave oddly, turn the patch off (see below).</td></tr>
+<tr><td>Metal Gear Solid 3</td><td>30 FPS (the game's own rate, coolest). A 60 FPS patch is available.</td></tr>
+<tr><td>Black</td><td>None (original 30 fps). 45 FPS (custom) and 60 FPS patches are available.</td></tr>
+<tr><td>Gran Turismo 3 and 4</td><td>Lighting performance patches (lower GPU load, same look)</td></tr>
+<tr><td>Burnout 3, Burnout Revenge</td><td>Progressive scan, MPH to KPH</td></tr>
+<tr><td>SSX 3</td><td>Metro slowdown fix, skip intro videos</td></tr>
+<tr><td>God of War II</td><td>Emulator-friendly waits</td></tr>
+</table></div>
+<h3>How to turn a patch on or off</h3>
+<ol class="steps">
+<li>Quit RetroArch.</li>
+<li>Open the game's <code>.ini</code> file in <code>~/Documents/RetroArch/system/pcsx2/gamesettings/</code> with TextEdit. To find the right file, look at the game name at the top of each file.</li>
+<li>In the <code>[Patches]</code> section, a line <code>Enable = 60 FPS</code> means "on". Put a semicolon in front (<code>;Enable = 60 FPS</code>) to turn it off, or remove the semicolon to turn it on.</li>
+<li>Save and start the game again.</li>
+</ol>
+<div class="card warn"><p><strong>Rules:</strong> keep each comment on its own line (starting with <code>;</code>), never after a value. Use only <strong>one frame-rate patch per game</strong>. A patch name must match exactly as it's written in the list at the top of the file.</p></div>
+<div class="card"><p><strong>Known quirk:</strong> the Jak and Daxter (Jak 1) settings file is named for a different disc version than the one in this library, so it isn't used. That's harmless: the game runs fine on defaults. To activate those settings, rename it to <code>SCUS-97124_472E7699.ini</code>.</p></div>
+
+<h2 id="options">7. Changing options safely</h2>
+<ul>
+<li><strong>Emulator options for one game:</strong> during the game, open the Quick Menu → <strong>Core Options</strong>, change what you need, then <strong>Manage Core Options → Save Game Options</strong>. Only that game is affected.</li>
+<li><strong>Graphics renderer:</strong> PS2 is under Core Options → Video → Renderer (Metal or Vulkan); Dolphin is under Graphics → Renderer. A renderer change needs the game to be restarted.</li>
+<li><strong>Resolution:</strong> most games run at native resolution (1x) for cool, smooth play on laptops. Raising it (PS2: Upscale Multiplier, Dolphin: Internal Resolution) looks sharper but runs hotter.</li>
+<li><strong>Leave these alone</strong> unless you know why: <em>MoltenVK Asynchronous Submits (Experimental)</em> is off on purpose (it can crash RetroArch), and the PS2 <em>Frame Limiter</em> is set to "Frontend" to avoid audio stutter.</li>
+<li><strong>Screen look:</strong> some systems use a CRT shader and bezel overlay. Change or turn them off under Quick Menu → Shaders / On-Screen Overlay.</li>
+</ul>
+
+<h2 id="games">8. Adding new games</h2>
+<ol class="steps">
+<li>Copy the game into the right system folder on the drive, for example <code>Games/RetroArch/roms/PS2/</code>.</li>
+<li>In RetroArch: <strong>Import Content</strong> (the + tab) → <strong>Scan Directory</strong> → open the drive → <code>Games/RetroArch/roms</code> → choose the system folder → <strong>Scan This Directory</strong>.</li>
+<li>The game appears in that system's playlist. For PS2 disc images, RetroArch may not recognise every file automatically; if one doesn't appear, use <strong>Manual Scan</strong> with the system's name and core.</li>
+</ol>
+<p class="small">PS2 games prefer <code>.iso</code> or <code>.chd</code>; GameCube and Wii prefer <code>.rvz</code>; PlayStation uses <code>.chd</code> or <code>.cue/.bin</code>; multi-disc games need an <code>.m3u</code>.</p>
+
+<h2 id="trouble">9. Troubleshooting</h2>
+<h3>"RetroArch can't be opened" or "is damaged"</h3>
+<p>Use right-click → Open (section 2, step 4). If macOS still refuses, open Terminal and run the line below, then open RetroArch again:</p>
+<pre><code>xattr -dr com.apple.quarantine /Applications/RetroArch.app</code></pre>
+<h3>Playlists show games but they won't start / "file not found"</h3>
+<ul>
+<li>Is the drive plugged in, with the folder exactly <code>Games/RetroArch/roms</code>?</li>
+<li>Did RetroArch get permission for removable volumes? Check System Settings → Privacy &amp; Security → Files and Folders → RetroArch → <em>Removable Volumes</em>, or grant <em>Full Disk Access</em>.</li>
+<li>If you renamed game files, scan again (section 8).</li>
+</ul>
+<h3>The setup didn't install on first launch (empty menu, default look)</h3>
+<p>A RetroArch configuration already existed on this Mac, so the setup stayed out of the way. To start fresh: quit RetroArch, move <code>~/Library/Application Support/RetroArch</code> to the Trash (back it up first if it matters), and open RetroArch again.</p>
+<h3>A game runs slowly or the Mac gets hot</h3>
+<ul>
+<li>Keep resolution at 1x for that game (section 7).</li>
+<li>Use a lower frame-rate patch where one exists (section 6): 30 or 45 instead of 60.</li>
+<li>Plug the Mac in; low-power mode slows emulation.</li>
+</ul>
+<h3>Audio crackles</h3>
+<p>Make sure no other heavy app is running, and leave the PS2 Frame Limiter on "Frontend". If one game crackles, try a lower frame-rate patch for it.</p>
+<h3>Something looks wrong in a PS2 game</h3>
+<p>Try the other renderer (Metal ↔ Vulkan) for that game only (section 7). If a patch was changed recently, turn it back off.</p>
+
+<h2 id="folders">10. Where everything lives</h2>
+<div class="wrap"><table>
+<tr><th>What</th><th>Where</th></tr>
+<tr><td>Games</td><td><code>&lt;drive&gt;/Games/RetroArch/roms/&lt;SYSTEM&gt;/</code></td></tr>
+<tr><td>Main settings</td><td><code>~/Library/Application Support/RetroArch/config/retroarch.cfg</code></td></tr>
+<tr><td>Per-game emulator options</td><td><code>~/Library/Application Support/RetroArch/config/&lt;core&gt;/&lt;game&gt;.opt</code></td></tr>
+<tr><td>Emulators (cores)</td><td><code>~/Library/Application Support/RetroArch/cores/</code></td></tr>
+<tr><td>Playlists</td><td><code>~/Documents/RetroArch/playlists/</code></td></tr>
+<tr><td>In-game saves</td><td><code>~/Documents/RetroArch/saves/</code>; PS2 memory cards in <code>~/Documents/RetroArch/system/pcsx2/memcards/</code></td></tr>
+<tr><td>Savestates</td><td><code>~/Documents/RetroArch/states/</code></td></tr>
+<tr><td>BIOS and system files</td><td><code>~/Documents/RetroArch/system/</code></td></tr>
+<tr><td>PS2 per-game settings</td><td><code>~/Documents/RetroArch/system/pcsx2/gamesettings/</code></td></tr>
+<tr><td>PS2 custom patches</td><td><code>~/Documents/RetroArch/system/pcsx2/patches/</code></td></tr>
+<tr><td>Logs (for troubleshooting)</td><td><code>~/Documents/RetroArch/logs/retroarch.log</code></td></tr>
+</table></div>
+<p class="small"><code>~</code> means your home folder. To open one of these in Finder: Go menu → Go to Folder… (<kbd>⇧⌘G</kbd>) and paste the path. <code>Library</code> is hidden by default; Go to Folder still opens it.</p>
+<div class="card warn"><p><strong>Keep this setup to yourself.</strong> It contains the original owner's RetroArch account login (RetroAchievements) and BIOS files. Don't share the disk image publicly.</p></div>
+</main>
+</body>
+</html>

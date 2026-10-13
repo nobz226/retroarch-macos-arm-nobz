@@ -1,0 +1,34 @@
+cheats = 8
+
+cheat0_desc = "Infinite Money"
+cheat0_code = "06C2E569 08000000+050943A8 0098967F"
+cheat0_enable = false
+
+cheat1_desc = "Infinite Fodder In Barn"
+cheat1_code = "06C2E56A 08000000+030A3EDC 000003E7"
+cheat1_enable = false
+
+cheat2_desc = "Chickens Always Have Feed"
+cheat2_code = "06C2E56B 08000000+03094E46 00005D8A"
+cheat2_enable = false
+
+cheat3_desc = "All Tools In Shed"
+cheat3_code = "04055934 38000091+04055938 98030008"
+cheat3_enable = false
+
+cheat4_desc = "All Barn Animals Have Food"
+cheat4_code = "06C2E56D 08000000+01094D8F 00000004+01094D93 00000003+01094DA7 00000004+01094DAB 00000003+01094DBF 00000004+01094DC3 00000003+01094DD7 00000004+01094DDB 00000003+01094DEF 00000004+01094DF3 00000003+01094E07 00000004+01094E0B 00000003+01094E1F 00000004+01094E23 00000003+01094E37 00000004+01094E3B 00000003"
+cheat4_enable = false
+
+cheat5_desc = "Increase Time Speed (D Pad Up)"
+cheat5_code = "06C2E56E 08000000+4A3434E6 00000008+1A01245A 00006000+8201245A 00000001"
+cheat5_enable = false
+
+cheat6_desc = "Decrease Time Speed (D Pad Down)"
+cheat6_code = "06C2E56F 08000000+4A3434E6 00000004+2201245A 00000000+8201245A 0000FFFF"
+cheat6_enable = false
+
+cheat7_desc = "Reset Time Speed (D Pad Right)"
+cheat7_code = "06C2E570 08000000+0A3434E6 00000002+04012458 38080014"
+cheat7_enable = false
+

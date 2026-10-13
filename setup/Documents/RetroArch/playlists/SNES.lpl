@@ -1,0 +1,55 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+  "default_core_name": "Nintendo - SNES / SFC (bsnes)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/SNES",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "SNES.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Mario All-Stars.sfc",
+      "label": "Super Mario All-Stars",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Mario World.sfc",
+      "label": "Super Mario World",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Mario World 2 - Yoshi's Island.sfc",
+      "label": "Super Mario World 2 - Yoshi's Island",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Metroid.sfc",
+      "label": "Super Metroid",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    }
+  ]
+}

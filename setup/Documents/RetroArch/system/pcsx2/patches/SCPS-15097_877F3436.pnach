@@ -1,0 +1,90 @@
+gametitle=Wanda to Kyozou / Shadow of the Colossus (NTSC-J) [SCPS-15097] 877F3436
+
+// Frame-rate caps for Shadow of the Colossus (SCPS-15097, disc 1.06).
+//
+// How the game paces itself: KERNEL.XFF runs a scheduler thread once per vblank. It counts
+// vblanks since the current frame started (0x001E1360; the main loop passes that count to the
+// object update as the frame's time step and zeroes it when the next frame starts). When the
+// GS has finished drawing, the scheduler releases the main thread to start the next frame
+// (0x001C3B80..0x001C3BB4). So a new frame starts at the first vblank after the last one is
+// drawn, up to 60 fps, and game speed follows the vblanks each frame took.
+//
+// The caps hook that release: the next frame may only start once the current one has lasted
+// N vblanks (N cycled from a 3-entry table). Frames then start right on a vblank, evenly
+// spaced. If the game is already slower than the cap, nothing changes. Use one cap at a time.
+// Switching a cap off needs a reboot of the game (the hook stays in memory until then).
+//
+// Addresses: KERNEL.XFF's .text loads at 0x001AC9A0 (from a savestate). The hook's conditions
+// only write when the original instructions are in place.
+
+[Perf - 30 FPS Cap]
+author=sotc perf pack
+description=Caps the game at 30 fps: every frame lasts 2 vblanks. About a third less work than 60 fps, game speed unchanged. Use one cap at a time; switching it off needs a reboot.
+// Vblanks each frame must last, cycled frame by frame (table at 0x000FF0C8; index at 0x000FF0C4):
+patch=1,EE,200FF0C8,extended,00000002
+patch=1,EE,200FF0CC,extended,00000002
+patch=1,EE,200FF0D0,extended,00000002
+// Cap routine (code cave at 0x000FF100, unused memory in this game):
+patch=1,EE,200FF100,extended,10400012
+patch=1,EE,200FF104,extended,3C040010
+patch=1,EE,200FF108,extended,8E450000
+patch=1,EE,200FF10C,extended,8C87F0C4
+patch=1,EE,200FF110,extended,00074080
+patch=1,EE,200FF114,extended,01044021
+patch=1,EE,200FF118,extended,8D08F0C8
+patch=1,EE,200FF11C,extended,00A8402B
+patch=1,EE,200FF120,extended,15000008
+patch=1,EE,200FF124,extended,24E70001
+patch=1,EE,200FF128,extended,2CE80003
+patch=1,EE,200FF12C,extended,15000002
+patch=1,EE,200FF130,extended,00000000
+patch=1,EE,200FF134,extended,00003821
+patch=1,EE,200FF138,extended,AC87F0C4
+patch=1,EE,200FF13C,extended,08070EE2
+patch=1,EE,200FF140,extended,26A31310
+patch=1,EE,200FF144,extended,08070EF8
+patch=1,EE,200FF148,extended,00000000
+patch=1,EE,200FF14C,extended,08070EF0
+patch=1,EE,200FF150,extended,00000000
+// Hook: only written once KERNEL.XFF is loaded and the original code is in place
+// (0x001C3B80 beqz v0,0x1C3BC0 / 0x001C3B88 lw v0,0(v1)); skipped once it is patched.
+patch=1,EE,E0031040,extended,001C3B82
+patch=1,EE,E0028C62,extended,001C3B8A
+patch=1,EE,E001000F,extended,001C3B80
+patch=1,EE,201C3B80,extended,0803FC40
+
+[Perf - 45 FPS Cap]
+author=sotc perf pack
+description=Caps the game at 45 fps: frames last 1, 1 and 2 vblanks in turn (3 frames every 4 vblanks). Game speed unchanged. Use one cap at a time; switching it off needs a reboot.
+// Vblanks each frame must last, cycled frame by frame (table at 0x000FF0C8; index at 0x000FF0C4):
+patch=1,EE,200FF0C8,extended,00000001
+patch=1,EE,200FF0CC,extended,00000001
+patch=1,EE,200FF0D0,extended,00000002
+// Cap routine (code cave at 0x000FF100, unused memory in this game):
+patch=1,EE,200FF100,extended,10400012
+patch=1,EE,200FF104,extended,3C040010
+patch=1,EE,200FF108,extended,8E450000
+patch=1,EE,200FF10C,extended,8C87F0C4
+patch=1,EE,200FF110,extended,00074080
+patch=1,EE,200FF114,extended,01044021
+patch=1,EE,200FF118,extended,8D08F0C8
+patch=1,EE,200FF11C,extended,00A8402B
+patch=1,EE,200FF120,extended,15000008
+patch=1,EE,200FF124,extended,24E70001
+patch=1,EE,200FF128,extended,2CE80003
+patch=1,EE,200FF12C,extended,15000002
+patch=1,EE,200FF130,extended,00000000
+patch=1,EE,200FF134,extended,00003821
+patch=1,EE,200FF138,extended,AC87F0C4
+patch=1,EE,200FF13C,extended,08070EE2
+patch=1,EE,200FF140,extended,26A31310
+patch=1,EE,200FF144,extended,08070EF8
+patch=1,EE,200FF148,extended,00000000
+patch=1,EE,200FF14C,extended,08070EF0
+patch=1,EE,200FF150,extended,00000000
+// Hook: only written once KERNEL.XFF is loaded and the original code is in place
+// (0x001C3B80 beqz v0,0x1C3BC0 / 0x001C3B88 lw v0,0(v1)); skipped once it is patched.
+patch=1,EE,E0031040,extended,001C3B82
+patch=1,EE,E0028C62,extended,001C3B8A
+patch=1,EE,E001000F,extended,001C3B80
+patch=1,EE,201C3B80,extended,0803FC40

@@ -1,0 +1,95 @@
+{
+  "version": "1.5",
+  "default_core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+  "default_core_name": "Nintendo - GameCube / Wii (Dolphin)",
+  "base_content_directory": "/Volumes/extSSD/Games/RetroArch/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "scan_content_dir": "/Volumes/extSSD/Games/RetroArch/roms/Wii",
+  "scan_file_exts": "",
+  "scan_dat_file_path": "",
+  "scan_database_name": "Wii.lpl",
+  "scan_search_recursively": true,
+  "scan_search_archives": false,
+  "scan_filter_dat_content": false,
+  "scan_omit_db_ref": false,
+  "scan_overwrite_playlist": false,
+  "scan_db_usage": 4,
+  "items": [
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Biohazard - The Darkside Chronicles.rvz",
+      "label": "Biohazard - The Darkside Chronicles",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Biohazard - The Umbrella Chronicles.rvz",
+      "label": "Biohazard - The Umbrella Chronicles",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Donkey Kong Country Returns.rvz",
+      "label": "Donkey Kong Country Returns",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Mario Kart Wii.rvz",
+      "label": "Mario Kart Wii",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/New Super Mario Bros. Wii.rvz",
+      "label": "New Super Mario Bros. Wii",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Super Mario Galaxy.rvz",
+      "label": "Super Mario Galaxy",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Super Mario Galaxy 2.rvz",
+      "label": "Super Mario Galaxy 2",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Super Smash Bros. Brawl.rvz",
+      "label": "Super Smash Bros. Brawl",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Xenoblade Chronicles.rvz",
+      "label": "Xenoblade Chronicles",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    }
+  ]
+}

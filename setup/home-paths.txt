@@ -1,0 +1,10 @@
+Documents/RetroArch/playlists/CPS.lpl
+Documents/RetroArch/playlists/DREAMCAST.lpl
+Documents/RetroArch/playlists/GAMECUBE.lpl
+Documents/RetroArch/playlists/N64.lpl
+Documents/RetroArch/playlists/NEOGEO.lpl
+Documents/RetroArch/playlists/PS2.lpl
+Documents/RetroArch/playlists/PSX.lpl
+Documents/RetroArch/playlists/SNES.lpl
+Documents/RetroArch/playlists/Wii.lpl
+Documents/RetroArch/system/pcsx2/inis/armsx2-libretro.ini
