@@ -50,6 +50,14 @@
       "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/The Legend of Zelda - A Link to the Past.sfc",
+      "label": "The Legend of Zelda - A Link to the Past",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
     }
   ]
 }
