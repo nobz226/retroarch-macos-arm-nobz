@@ -1,0 +1,6 @@
+cheats = 1
+
+cheat0_desc = "Disable Captain Mega Strikes"
+cheat0_code = "0402f788 38600000+0402f78c 480000a0"
+cheat0_enable = false
+

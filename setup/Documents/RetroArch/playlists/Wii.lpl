@@ -52,6 +52,22 @@
       "db_name": "Wii.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Mario Strikers - Charged.rvz",
+      "label": "Mario Strikers - Charged",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Metroid Prime 3 - Corruption.rvz",
+      "label": "Metroid Prime 3 - Corruption",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/New Super Mario Bros. Wii.rvz",
       "label": "New Super Mario Bros. Wii",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
@@ -78,6 +94,14 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/Super Smash Bros. Brawl.rvz",
       "label": "Super Smash Bros. Brawl",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
+      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "crc32": "00000000|crc",
+      "db_name": "Wii.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/Wii/The Legend of Zelda - Skyward Sword.rvz",
+      "label": "The Legend of Zelda - Skyward Sword",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
       "core_name": "Nintendo - GameCube / Wii (Dolphin)",
       "crc32": "00000000|crc",
