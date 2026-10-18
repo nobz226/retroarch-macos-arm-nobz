@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyward Sword Controls</title>
+<style>
+  :root {
+    --bg: #faf8f3; --fg: #1d1d1f; --muted: #5f5f66; --card: #ffffff;
+    --line: #e4e0d6; --accent: #2f7d5b; --key: #f0ece2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181b; --fg: #ececf0; --muted: #a2a2ab; --card: #1f2024;
+      --line: #33343a; --accent: #6fcf9f; --key: #2b2c31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 10px; color: var(--accent); }
+  p.lede { color: var(--muted); margin: 0 0 20px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card);
+          border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  kbd { background: var(--key); border: 1px solid var(--line); border-radius: 5px;
+        padding: 1px 6px; font: 600 .85rem ui-monospace, SFMono-Regular, Menlo, monospace; white-space: nowrap; }
+  .note { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+          border-radius: 8px; padding: 12px 14px; margin: 14px 0; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Skyward Sword controls</h1>
+  <p class="lede">The Legend of Zelda: Skyward Sword (Wii, USA) on a normal controller in this RetroArch setup. Button names are Nintendo Pro Controller labels; on an Xbox pad, A and B are the same and X and Y are swapped.</p>
+
+  <div class="note">The game thinks it's using a Wii Remote with MotionPlus and a Nunchuk. The right stick stands in for the Wii Remote: a quick <strong>flick</strong> to the edge is a sword swing; smaller pushes move the pointer, which stays where you leave it.</div>
+
+  <h2>Everyday controls</h2>
+  <div class="wrap"><table>
+    <tr><th>Button</th><th>Does</th><th>Wii equivalent</th></tr>
+    <tr><td>Left stick</td><td>Move</td><td>Nunchuk stick</td></tr>
+    <tr><td>Right stick, flick</td><td>Swing the sword in the direction you flick (8 directions, diagonals included)</td><td>Swing the Wii Remote</td></tr>
+    <tr><td>Right stick, push</td><td>Move the pointer and aim: menus, item wheel, bow, slingshot, clawshots, dowsing. The cursor stays where you leave it.</td><td>Wii Remote pointer</td></tr>
+    <tr><td><kbd>A</kbd></td><td>Action, talk, hold to sprint</td><td>A</td></tr>
+    <tr><td><kbd>B</kbd></td><td>Use item; hold for the item wheel</td><td>B</td></tr>
+    <tr><td><kbd>L2</kbd></td><td>Target, recenter the camera</td><td>Z</td></tr>
+    <tr><td><kbd>X</kbd></td><td>First-person view, dowsing</td><td>C</td></tr>
+    <tr><td><kbd>Y</kbd></td><td>Adventure Pouch</td><td>&minus;</td></tr>
+    <tr><td><kbd>Start</kbd></td><td>Map</td><td>+</td></tr>
+    <tr><td><kbd>Select</kbd></td><td>Gear</td><td>1</td></tr>
+    <tr><td><kbd>D-pad up</kbd></td><td>Harp</td><td>D-pad up</td></tr>
+    <tr><td><kbd>D-pad down</kbd></td><td>Call Fi; recenters the pointer</td><td>D-pad down</td></tr>
+    <tr><td><kbd>D-pad right</kbd></td><td>Help</td><td>2</td></tr>
+  </table></div>
+
+  <h2>Combat</h2>
+  <div class="wrap"><table>
+    <tr><th>Button</th><th>Does</th><th>Wii equivalent</th></tr>
+    <tr><td>Right stick, flick</td><td>Slash. Match the direction to the gap in an enemy's guard</td><td>Swing</td></tr>
+    <tr><td><kbd>R1</kbd></td><td><strong>Stab</strong> (thrust)</td><td>Thrust the Wii Remote forward</td></tr>
+    <tr><td><kbd>D-pad left</kbd> held + flick left/right</td><td><strong>Spin attack</strong>; flick up/down for a vertical spin</td><td>Swing both controllers together</td></tr>
+    <tr><td>Right stick held up, then flick</td><td><strong>Skyward Strike</strong>: hold until the sword glows, then slash or stab</td><td>Raise the Wii Remote</td></tr>
+    <tr><td><kbd>R2</kbd></td><td>Raise shield; tap with good timing to <strong>shield bash</strong> (parry)</td><td>Shake the Nunchuk</td></tr>
+    <tr><td><kbd>R3</kbd></td><td>Shake the Wii Remote (shake prompts)</td><td>Shake the Wii Remote</td></tr>
+    <tr><td><kbd>L1</kbd> held</td><td><strong>Aim-only</strong>: the right stick points without ever swinging</td><td>&mdash;</td></tr>
+  </table></div>
+  <ul>
+    <li><strong>Fatal Blow</strong> (finishing a downed enemy): lock on with <kbd>L2</kbd>, then hold <kbd>D-pad left</kbd> and flick up or down; if that doesn't trigger it, try a stab with <kbd>R1</kbd>.</li>
+    <li>If aiming near the edge of the screen sets off a swing, hold <kbd>L1</kbd> while you aim.</li>
+  </ul>
+
+  <h2>Flying, beetle, minecarts and balancing</h2>
+  <div class="wrap"><table>
+    <tr><th>Button</th><th>Does</th></tr>
+    <tr><td><kbd>L3</kbd> (click)</td><td><strong>Tilt mode on/off.</strong> While on, the right stick tilts and rolls the Wii Remote instead of swinging or pointing.</td></tr>
+    <tr><td>Right stick in tilt mode</td><td>Steer the Loftwing, the beetle and minecarts, keep balance on tightropes, steer while swimming</td></tr>
+  </table></div>
+  <ul>
+    <li>Turn tilt mode <strong>off</strong> again (click <kbd>L3</kbd>) before fighting or aiming, or swings won't happen.</li>
+    <li>To flap the Loftwing's wings, flick the right stick up with tilt mode off (like flicking the Wii Remote up).</li>
+  </ul>
+
+  <h2>Special moves you'll need later</h2>
+  <p class="lede">These are the motion moments that can hold up progress. Most use tilt mode (<kbd>L3</kbd>); the ones marked <em>to confirm</em> aren't verified on this layout yet.</p>
+  <div class="wrap"><table>
+    <tr><th>Action</th><th>Where it's needed</th><th>How</th></tr>
+    <tr><td><strong>Harp</strong></td><td>Ballad of the Goddess (Gate of Time), Isle of Songs, opening each Silent Realm</td><td>Hold <kbd>A</kbd> and flick the right stick left and right in time with the pulse</td></tr>
+    <tr><td><strong>Rolling bombs</strong> <em>to confirm</em></td><td>Some dungeon puzzles that need a bomb rolled along the floor</td><td>Holding a bomb, flick up or down to find the one that rolls instead of throws (an underhand swing on the Wii)</td></tr>
+    <tr><td><strong>Boss-door keys</strong></td><td>Every dungeon boss door</td><td>Tilt mode, then turn the key with the right stick</td></tr>
+    <tr><td><strong>Minecart</strong></td><td>The Shipyard (required)</td><td>Tilt mode to lean; flick up to jump if asked</td></tr>
+    <tr><td><strong>Swimming</strong></td><td>After the Water Dragon's Scale (Lake Floria and others)</td><td>Tilt mode to steer</td></tr>
+    <tr><td><strong>Tightropes, balancing</strong></td><td>A few places in dungeons</td><td>Tilt mode to balance while walking with the left stick</td></tr>
+    <tr><td><strong>Spiral Charge</strong> <em>to confirm</em></td><td>Owlan's training, needed before the Levias fight</td><td>On the Loftwing: try quick up-then-down flicks, or circling the stick in tilt mode</td></tr>
+    <tr><td><strong>Whip</strong></td><td>Ancient Cistern</td><td>Right-stick flicks, like sword swings</td></tr>
+    <tr><td><strong>Bow</strong> <em>to confirm</em></td><td>Later dungeons and bosses (Tentalus, Koloktos)</td><td>Push the stick to aim; on the Wii you pull the Nunchuk back to draw, so check whether holding <kbd>A</kbd> or <kbd>B</kbd> draws and fires</td></tr>
+    <tr><td><strong>Goddess walls</strong> (drawing)</td><td>Optional: one Piece of Heart</td><td>Skyward Strike at the wall, then draw with the stick</td></tr>
+    <tr><td><strong>Demise's lightning</strong></td><td>The final boss</td><td>Hold the stick up to raise the sword and catch the lightning, then flick to release it</td></tr>
+  </table></div>
+
+  <h2>If something goes wrong</h2>
+  <ul>
+    <li><strong>Pointer drifts or sits off-centre:</strong> press <kbd>D-pad down</kbd>, or call Fi. On the &ldquo;Point the Wii Remote at the screen&rdquo; screen, move the hand to the middle and press <kbd>A</kbd>.</li>
+    <li><strong>Pointer range:</strong> the pointer is set to 38&deg; wide by 30&deg; tall (<em>Wiimote IR Total Yaw/Pitch</em>). Don't raise these: past that, the emulated Wii Remote camera loses the sensor bar and the cursor disappears.</li>
+    <li><strong>Stray stabs or shield bashes:</strong> lower <em>Wiimote Swing &gt; Swing Speed</em> in the core options (Quick Menu &gt; Core Options).</li>
+    <li><strong>Swings too hard to trigger, or happening while aiming:</strong> change <em>Swing Dead Zone</em> (higher = needs a bigger flick).</li>
+    <li>All of these are set only for Skyward Sword; other games are unaffected.</li>
+  </ul>
+</main>
+</body>
+</html>

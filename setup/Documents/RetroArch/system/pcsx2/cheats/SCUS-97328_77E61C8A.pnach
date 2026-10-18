@@ -1,0 +1,4 @@
+[Instant Gold License Tests]
+author=Cheat
+description=Automatically grants Gold on license tests
+patch=1,EE,20286824,extended,00000000

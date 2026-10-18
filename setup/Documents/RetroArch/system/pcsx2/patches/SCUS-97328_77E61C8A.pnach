@@ -679,3 +679,9 @@ author=Generated from disassembly
 // The car lights queue fill starts with "slti x, count, 0x64" (0x3B8568); the limit becomes 32. Lights are queued in
 // the game's list order, so without a distance cull the kept set changes as lights enter and leave the view (flicker).
 patch=1,EE,003B8568,word,28620020
+
+
+[Instant Gold License Tests]
+author=Cheat
+description=Automatically grants Gold on license tests
+patch=1,EE,203F8BA8,extended,241E0002
