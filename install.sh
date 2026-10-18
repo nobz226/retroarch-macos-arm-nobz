@@ -32,4 +32,12 @@ while IFS= read -r f; do
 done < "$HERE/setup/home-paths.txt"
 
 xattr -dr com.apple.quarantine "$LIB/cores" 2>/dev/null || true
+
+# The public repository also carries the custom RetroArch app
+if [ -d "$HERE/app/RetroArch.app" ]; then
+  echo "Installing the custom RetroArch app in /Applications..."
+  [ -d /Applications/RetroArch.app ] && mv /Applications/RetroArch.app "$HOME/.Trash/RetroArch (previous).app"
+  ditto "$HERE/app/RetroArch.app" /Applications/RetroArch.app
+  xattr -dr com.apple.quarantine /Applications/RetroArch.app 2>/dev/null || true
+fi
 echo "Done. Start RetroArch."

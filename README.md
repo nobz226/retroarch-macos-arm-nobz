@@ -251,7 +251,7 @@ The first-launch setup runs only on a Mac that has never had RetroArch set up (n
 ### Option B: from this repository
 
 1. Install RetroArch:
-   - **Best:** the custom RetroArch app (the one inside the DMG). It has every fix and finds your games on any drive.
+   - **Best:** the custom RetroArch app. The public repository includes it in the `app` folder, and `install.sh` (step 3) copies it into Applications for you. It's also the one inside the DMG. It has every fix and finds your games on any drive.
    - **Also works:** the official RetroArch for macOS from [retroarch.com](https://www.retroarch.com/?page=platforms). The PS2 and GameCube/Wii cores here are custom builds, so keep the ones this setup installs; don't update them with the Online Updater.
 2. Download this repository: **Code → Download ZIP** on GitHub, then double-click the ZIP. Or run `git clone` if you use Git.
 3. Quit RetroArch. Then open **Terminal**, type `cd ` (with a space), drag the downloaded folder into the Terminal window, press Return, and run:
