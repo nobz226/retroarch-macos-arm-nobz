@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 101 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 107 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -59,13 +59,23 @@ The RetroArch app itself is a custom build from `nobz226/RetroArch`. On top of s
 - its own icon theme, **Nobz**;
 - finding your games on any drive name;
 - refreshing playlists automatically at launch;
+- **game manuals** read inside RetroArch: **Manual** in a game's Run list and Quick Menu ([section 4](#game-manuals));
+- a **disc spin-up animation** when a disc game starts (switch: **Settings → User Interface → Appearance → Disc Spin-Up Animation**);
 - crash and freeze fixes for Vulkan.
+
+The Dolphin build (GameCube and Wii) adds:
+- controller aiming in the PrimeHack style for **Metroid Prime** and **Metroid Prime 2** (GameCube) and **Metroid Prime 3** (Wii), with no Wii Remote pointer needed ([section 6](#wii-games));
+- **Swing Lock** and a stick layout for playing **Skyward Sword** on a controller;
+- a fix for Metroid Prime's shaking opening movie;
+- Dolphin's pop-up warnings kept out of the way (they go to the log).
+
+The PCEE2 build (PS2) adds the **Metal** renderer used by most PS2 games, and smooth frame pacing on the Vulkan renderer after a pause or the Quick Menu.
 
 ---
 
 ## 2. Games
 
-### PlayStation 2 — 40 games
+### PlayStation 2 — 42 games
 
 Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 
@@ -110,6 +120,8 @@ Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 | SSX 3 | `SSX 3.iso` |
 | Tekken 5 | `Tekken 5.iso` |
 | Tenchu 3 | `Tenchu 3.iso` |
+| Tomb Raider - Anniversary | `Tomb Raider - Anniversary.iso` |
+| Tomb Raider - Legend | `Tomb Raider - Legend.iso` |
 | Tony Hawk's Underground | `Tony Hawk's Underground.iso` |
 
 ### PlayStation — 10 games
@@ -152,7 +164,7 @@ Core: **Nintendo - GameCube / Wii (Dolphin)** · Folder: `roms/GAMECUBE/`
 | The Legend of Zelda - The Wind Waker | `The Legend of Zelda - The Wind Waker.rvz` |
 | The Legend of Zelda - Twilight Princess | `The Legend of Zelda - Twilight Princess.rvz` |
 
-### Wii — 9 games
+### Wii — 12 games
 
 Core: **Nintendo - GameCube / Wii (Dolphin)** · Folder: `roms/Wii/`
 
@@ -162,10 +174,13 @@ Core: **Nintendo - GameCube / Wii (Dolphin)** · Folder: `roms/Wii/`
 | Biohazard - The Umbrella Chronicles | `Biohazard - The Umbrella Chronicles.rvz` |
 | Donkey Kong Country Returns | `Donkey Kong Country Returns.rvz` |
 | Mario Kart Wii | `Mario Kart Wii.rvz` |
+| Mario Strikers - Charged | `Mario Strikers - Charged.rvz` |
+| Metroid Prime 3 - Corruption | `Metroid Prime 3 - Corruption.rvz` |
 | New Super Mario Bros. Wii | `New Super Mario Bros. Wii.rvz` |
 | Super Mario Galaxy | `Super Mario Galaxy.rvz` |
 | Super Mario Galaxy 2 | `Super Mario Galaxy 2.rvz` |
 | Super Smash Bros. Brawl | `Super Smash Bros. Brawl.rvz` |
+| The Legend of Zelda - Skyward Sword | `The Legend of Zelda - Skyward Sword.rvz` |
 | Xenoblade Chronicles | `Xenoblade Chronicles.rvz` |
 
 ### Nintendo 64 — 4 games
@@ -179,7 +194,7 @@ Core: **Nintendo - Nintendo 64 (ParaLLEl N64)** · Folder: `roms/N64/`
 | The Legend of Zelda - Majora's Mask | `The Legend of Zelda - Majora's Mask.z64` |
 | The Legend of Zelda - Ocarina of Time | `The Legend of Zelda - Ocarina of Time.z64` |
 
-### Super Nintendo — 4 games
+### Super Nintendo — 5 games
 
 Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 
@@ -189,6 +204,7 @@ Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 | Super Mario World | `Super Mario World.sfc` |
 | Super Mario World 2 - Yoshi's Island | `Super Mario World 2 - Yoshi's Island.sfc` |
 | Super Metroid | `Super Metroid.sfc` |
+| The Legend of Zelda - A Link to the Past | `The Legend of Zelda - A Link to the Past.sfc` |
 
 ### Dreamcast — 4 games
 
@@ -303,7 +319,18 @@ The small image next to each game in a playlist can be the game's **title screen
 - Dreamcast, PlayStation, PS2, GameCube and Wii have their own logos. The other systems use their title screens in both modes, so they look the same either way.
 - When you add a game, put its logo in `thumbnails/<SYSTEM>/Named_Logos/`, named like the game file.
 
+With **Title Screen** chosen, the disc systems' title images are their discs. When you start one of those games with **Run**, the disc spins up for a moment and keeps spinning while the game loads. To turn that off: **Settings → User Interface → Appearance → Disc Spin-Up Animation**.
+
 Arcade games (CPS, Neo Geo) show up under their ROM-set name (for example `garou`). To give one a proper title, select it in the playlist and choose **Rename**. Its box art still goes by the file name (for example `garou.png`). Use **FinalBurn Neo** ROM sets.
+
+### Game manuals
+
+Manuals aren't included (they're scans of the printed booklets); add your own PDFs as described below.
+
+- **Opening one:** select a game, then **Manual** in its Run list (under **Run**), or **Quick Menu → Manual** while it's running. RetroArch shows the manual over the menu; the game stays where it was.
+- **Pages:** Left/Right or OK turns a page, L/R jumps 5 pages, Up/Down scrolls a zoomed page, Y, X or Select switches between fit page and fit width, and Back or Start closes it. The manual opens again where you left it.
+- **More than one manual** (for example an arcade card): Up/Down on the first or last page switches between them.
+- **Adding one:** put the PDF in `~/Library/Application Support/RetroArch/thumbnails/<SYSTEM>/Named_Manuals/`, named like the game in its playlist (for example `Gran Turismo 4.pdf`). An extra one goes beside it as `<game> (<anything>).pdf`. A game without a manual has no **Manual** entry.
 
 ---
 
@@ -420,8 +447,6 @@ To change what RetroArch thinks your controller's buttons are (for example, an u
 
 ### Layouts already set up
 
-| For | Controllers | What it covers |
-|---|---|---|
 | For | Layouts saved for |
 |---|---|
 | PS2 (all games) | Xbox, Switch Pro, any controller |
@@ -433,12 +458,17 @@ To change what RetroArch thinks your controller's buttons are (for example, an u
 | Super Mario Sunshine, Twilight Princess, Donkey Kong Country Returns, Smash Bros. Brawl | Switch Pro, any controller (per game) |
 | Super Mario Galaxy | Switch Pro, Xbox, any controller (per game) |
 | Super Mario Galaxy 2, New Super Mario Bros. Wii, Xenoblade Chronicles | any controller (per game) |
+| Metroid Prime 3, Skyward Sword, Mario Strikers Charged, Mario Kart Wii, Biohazard (GameCube) and both Biohazard Chronicles | Nintendo and Xbox layouts (per game) |
 
 ### Wii games
 
 Wii games expect a Wii Remote, so these settings matter:
 - **Super Mario Galaxy / Galaxy 2** need the Wii Remote pointer, which is moved with a stick. Its settings are under **Quick Menu → Core Options**, in the Wii Remote IR (pointer) options.
+- **Metroid Prime 3 - Corruption** aims like a PC shooter: the right stick turns and looks, with no pointer to keep on screen. Lever and rotary-lock puzzles work with the stick while you hold the motion button. Turn speed, invert Y and the aiming curve are in **Quick Menu → Core Options**.
+- **The Legend of Zelda - Skyward Sword** is set up for a controller, with Swing Lock for the sword. The full layout is in **Skyward Sword Controls.html**, next to this README.
 - The other Wii games have their layouts saved already (see the table above).
+
+**Metroid Prime and Metroid Prime 2 (GameCube)** aim the same way: the right stick turns and looks, **L1 + right stick** picks a beam (the GameCube C-stick), and **R3** levels the view. Their options are in **Quick Menu → Core Options** too.
 
 ---
 

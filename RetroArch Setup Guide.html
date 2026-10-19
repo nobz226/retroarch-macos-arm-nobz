@@ -100,7 +100,9 @@ nav.toc ol{margin:6px 0;padding-left:1.3em}
 
 <h2 id="play">4. Playing: menu, saves and keys</h2>
 <h3>Starting a game</h3>
-<p>Each system has a playlist in the main menu (scroll left/right). Pick a game and choose <strong>Run</strong>. The right emulator is already chosen.</p>
+<p>Each system has a playlist in the main menu (scroll left/right). Pick a game and choose <strong>Run</strong>. The right emulator is already chosen. For disc games the disc spins up while the game loads (turn it off in <strong>Settings → User Interface → Appearance → Disc Spin-Up Animation</strong>).</p>
+<h3>Reading a game's manual</h3>
+<p>Where a game has a manual, its Run list has <strong>Manual</strong> (under Run), and so does the <strong>Quick Menu</strong> while it's running. Left/Right or OK turns the page, L/R jumps 5 pages, Y, X or Select switches between fit page and fit width, Up/Down scrolls, and Back or Start closes it. It reopens where you stopped. Manuals are PDF files in <code>thumbnails/&lt;SYSTEM&gt;/Named_Manuals/</code>, named like the game.</p>
 <h3>Keyboard shortcuts (set up in this configuration)</h3>
 <div class="wrap"><table>
 <tr><th>Key</th><th>What it does</th></tr>
@@ -127,7 +129,7 @@ nav.toc ol{margin:6px 0;padding-left:1.3em}
 <div class="wrap"><table>
 <tr><th>Folder</th><th>System</th><th>Emulator (core)</th><th>Notes</th></tr>
 <tr><td>PS2</td><td>PlayStation 2</td><td>PCEE2</td><td>A custom build with Apple GPU fixes. Most games use the <strong>Metal</strong> renderer; Need for Speed: Most Wanted uses Vulkan. See <a href="#ps2">section 6</a>.</td></tr>
-<tr><td>GAMECUBE, Wii</td><td>GameCube and Wii</td><td>Dolphin</td><td>A custom build, renderer "Hardware" (Vulkan), the best balance on Apple GPUs. Wii games use the controller as the Wii Remote, with the pointer on an analog stick (adjust under Core Options → Wii Remote / IR if aiming feels off).</td></tr>
+<tr><td>GAMECUBE, Wii</td><td>GameCube and Wii</td><td>Dolphin</td><td>A custom build, renderer "Hardware" (Vulkan), the best balance on Apple GPUs. Wii games use the controller as the Wii Remote, with the pointer on an analog stick (adjust under Core Options → Wii Remote / IR if aiming feels off). Metroid Prime 1, 2 and 3 aim with the right stick like a PC shooter (Prime 1 and 2: L1 + right stick picks a beam, R3 levels the view). Skyward Sword is set up for a controller; see <strong>Skyward Sword Controls.html</strong>.</td></tr>
 <tr><td>PSX</td><td>PlayStation</td><td>SwanStation</td><td>Very accurate; multi-disc games use <code>.m3u</code> files.</td></tr>
 <tr><td>N64</td><td>Nintendo 64</td><td>ParaLLEl N64</td><td>Graphics plugin GLideN64. Save often in Conker's Bad Fur Day: it can crash after long sessions.</td></tr>
 <tr><td>DREAMCAST</td><td>Dreamcast</td><td>Flycast</td><td></td></tr>
