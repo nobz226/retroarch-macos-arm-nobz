@@ -332,6 +332,22 @@
       "db_name": "PS2.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tomb Raider - Anniversary.iso",
+      "label": "Tomb Raider - Anniversary",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
+      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "crc32": "00000000|crc",
+      "db_name": "PS2.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tomb Raider - Legend.iso",
+      "label": "Tomb Raider - Legend",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
+      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "crc32": "00000000|crc",
+      "db_name": "PS2.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tony Hawk's Underground.iso",
       "label": "Tony Hawk's Underground",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
