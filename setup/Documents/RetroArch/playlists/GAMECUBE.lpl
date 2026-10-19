@@ -22,8 +22,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/GAMECUBE/Biohazard/Biohazard.m3u",
       "label": "Biohazard",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/dolphin_libretro.dylib",
-      "core_name": "Nintendo - GameCube / Wii (Dolphin)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "GAMECUBE.lpl"
     },
