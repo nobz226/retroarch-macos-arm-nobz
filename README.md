@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 107 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 105 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -75,7 +75,7 @@ The PCEE2 build (PS2) adds the **Metal** renderer used by most PS2 games, and sm
 
 ## 2. Games
 
-### PlayStation 2 — 42 games
+### PlayStation 2 — 40 games
 
 Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 
@@ -120,8 +120,6 @@ Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 | SSX 3 | `SSX 3.iso` |
 | Tekken 5 | `Tekken 5.iso` |
 | Tenchu 3 | `Tenchu 3.iso` |
-| Tomb Raider - Anniversary | `Tomb Raider - Anniversary.iso` |
-| Tomb Raider - Legend | `Tomb Raider - Legend.iso` |
 | Tony Hawk's Underground | `Tony Hawk's Underground.iso` |
 
 ### PlayStation — 10 games
