@@ -22,8 +22,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Ace Combat 3 - Electrosphere/Ace Combat 3 - Electrosphere.m3u",
       "label": "Ace Combat 3 - Electrosphere",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
-      "core_name": "Sony - PlayStation (SwanStation)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PSX.lpl"
     },
@@ -38,8 +38,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Biohazard 2/Biohazard 2.m3u",
       "label": "Biohazard 2",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
-      "core_name": "Sony - PlayStation (SwanStation)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PSX.lpl"
     },
@@ -62,8 +62,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Metal Gear Solid - Integral/Metal Gear Solid - Integral.m3u",
       "label": "Metal Gear Solid - Integral",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
-      "core_name": "Sony - PlayStation (SwanStation)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PSX.lpl"
     },

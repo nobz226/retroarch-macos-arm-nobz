@@ -46,8 +46,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Metroid.sfc",
       "label": "Super Metroid",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
       "crc32": "00000000|crc",
       "db_name": "SNES.lpl"
     },

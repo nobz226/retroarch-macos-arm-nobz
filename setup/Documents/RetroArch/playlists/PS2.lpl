@@ -76,6 +76,14 @@
       "db_name": "PS2.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Final Fantasy XII - International.chd",
+      "label": "Final Fantasy XII - International",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
+      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "crc32": "00000000|crc",
+      "db_name": "PS2.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/God of War.iso",
       "label": "God of War",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
@@ -198,8 +206,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Metal Gear Solid 3 - Subsistence.m3u",
       "label": "Metal Gear Solid 3 - Subsistence",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PS2.lpl"
     },
@@ -222,8 +230,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Onimusha - Dawn of Dreams.m3u",
       "label": "Onimusha - Dawn of Dreams",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PS2.lpl"
     },
@@ -350,6 +358,22 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tony Hawk's Underground.iso",
       "label": "Tony Hawk's Underground",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
+      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "crc32": "00000000|crc",
+      "db_name": "PS2.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Zone of the Enders - The 2nd Runner - Special Edition.iso",
+      "label": "Zone of the Enders - The 2nd Runner - Special Edition",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
+      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "crc32": "00000000|crc",
+      "db_name": "PS2.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Zone of the Enders - Z.O.E.iso",
+      "label": "Zone of the Enders - Z.O.E",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
       "core_name": "Sony - PlayStation 2 (PCEE2)",
       "crc32": "00000000|crc",
