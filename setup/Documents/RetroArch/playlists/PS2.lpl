@@ -36,14 +36,6 @@
       "db_name": "PS2.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Black.iso",
-      "label": "Black",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Burnout - Revenge.iso",
       "label": "Burnout - Revenge",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
@@ -78,8 +70,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Final Fantasy XII - International.chd",
       "label": "Final Fantasy XII - International",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "PS2.lpl"
     },
@@ -110,38 +102,6 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Gran Turismo 4.iso",
       "label": "Gran Turismo 4",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto - San Andreas.iso",
-      "label": "Grand Theft Auto - San Andreas",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto - Vice City.iso",
-      "label": "Grand Theft Auto - Vice City",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto III.iso",
-      "label": "Grand Theft Auto III",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Guilty Gear XX #Reload.iso",
-      "label": "Guilty Gear XX #Reload",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
       "core_name": "Sony - PlayStation 2 (PCEE2)",
       "crc32": "00000000|crc",
@@ -214,14 +174,6 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Midnight Club 3 - DUB Edition Remix.iso",
       "label": "Midnight Club 3 - DUB Edition Remix",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Need for Speed - Most Wanted - Black Edition.iso",
-      "label": "Need for Speed - Most Wanted - Black Edition",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
       "core_name": "Sony - PlayStation 2 (PCEE2)",
       "crc32": "00000000|crc",
@@ -340,40 +292,8 @@
       "db_name": "PS2.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tomb Raider - Anniversary.iso",
-      "label": "Tomb Raider - Anniversary",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tomb Raider - Legend.iso",
-      "label": "Tomb Raider - Legend",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Tony Hawk's Underground.iso",
       "label": "Tony Hawk's Underground",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Zone of the Enders - The 2nd Runner - Special Edition.iso",
-      "label": "Zone of the Enders - The 2nd Runner - Special Edition",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Zone of the Enders - Z.O.E.iso",
-      "label": "Zone of the Enders - Z.O.E",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
       "core_name": "Sony - PlayStation 2 (PCEE2)",
       "crc32": "00000000|crc",
