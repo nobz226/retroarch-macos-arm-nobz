@@ -108,30 +108,6 @@
       "db_name": "PS2.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto - San Andreas.iso",
-      "label": "Grand Theft Auto - San Andreas",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto - Vice City.iso",
-      "label": "Grand Theft Auto - Vice City",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Grand Theft Auto III.iso",
-      "label": "Grand Theft Auto III",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
-      "core_name": "Sony - PlayStation 2 (PCEE2)",
-      "crc32": "00000000|crc",
-      "db_name": "PS2.lpl"
-    },
-    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PS2/Jak 3.iso",
       "label": "Jak 3",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/pcee2_libretro.dylib",
