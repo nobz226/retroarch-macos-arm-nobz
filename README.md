@@ -533,7 +533,7 @@ PS2 per-game files are in `~/Documents/RetroArch/system/pcsx2/gamesettings/<SERI
 | Metal Gear Solid 3 | 30 FPS (60 available) | |
 | Kingdom Hearts FM | 60 FPS + HP/MP fix | |
 | Kingdom Hearts II FM+ | 60 FPS | |
-| GTA III / Vice City / San Andreas | 60 FPS | San Andreas: swimming, aiming and trains act oddly above 30 FPS |
+| GTA III / Vice City / San Andreas | 60 FPS; GTA III and Vice City also: modern controls and right-stick camera (Zeroable), free aim with the PC crosshair and all weapons (custom) | San Andreas: swimming, aiming and trains act oddly above 30 FPS |
 | Gran Turismo 3 / 4 | lighting performance patches | |
 | Burnout 3 / Revenge | progressive scan, MPH to KPH | |
 | SSX 3 | Metro slowdown fix, skip intros | |
