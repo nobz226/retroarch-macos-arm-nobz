@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 110 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 111 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -67,7 +67,8 @@ The Dolphin build (GameCube and Wii) adds:
 - controller aiming in the PrimeHack style for **Metroid Prime** and **Metroid Prime 2** (GameCube) and **Metroid Prime 3** (Wii), with no Wii Remote pointer needed ([section 6](#wii-games));
 - **Swing Lock** and a stick layout for playing **Skyward Sword** on a controller;
 - a fix for Metroid Prime's shaking opening movie;
-- Dolphin's pop-up warnings kept out of the way (they go to the log).
+- Dolphin's pop-up warnings kept out of the way (they go to the log);
+- no freeze when closing a Wii game (Wii internet downloads, whose servers are long gone, are switched off).
 
 The PCEE2 build (PS2) adds the **Metal** renderer used by most PS2 games, and smooth frame pacing on the Vulkan renderer after a pause or the Quick Menu.
 
@@ -211,7 +212,7 @@ Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 | Super Metroid | `Super Metroid.sfc` |
 | The Legend of Zelda - A Link to the Past | `The Legend of Zelda - A Link to the Past.sfc` |
 
-### Dreamcast — 4 games
+### Dreamcast — 5 games
 
 Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 
@@ -219,6 +220,7 @@ Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 |---|---|
 | Capcom vs. SNK - Millennium Fight 2000 Pro | `Capcom vs. SNK - Millennium Fight 2000 Pro.chd` |
 | Capcom vs. SNK 2 - Millionaire Fighting 2001 | `Capcom vs. SNK 2 - Millionaire Fighting 2001.chd` |
+| Grand Theft Auto 2 | `Grand Theft Auto 2.chd` |
 | Marvel vs. Capcom 2 - New Age of Heroes | `Marvel vs. Capcom 2 - New Age of Heroes.chd` |
 | SoulCalibur | `SoulCalibur.chd` |
 
