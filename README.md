@@ -49,7 +49,7 @@ A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 111 games 
 | PlayStation | SwanStation |
 | Nintendo 64 | ParaLLEl N64 |
 | Super Nintendo | bsnes |
-| Dreamcast | Flycast |
+| Dreamcast | Flycast (custom build, from `nobz226/flycast`) |
 | Capcom arcade and Neo Geo | FinalBurn Neo |
 
 The RetroArch app itself is a custom build from `nobz226/RetroArch`. On top of standard RetroArch it adds:
@@ -69,6 +69,8 @@ The Dolphin build (GameCube and Wii) adds:
 - a fix for Metroid Prime's shaking opening movie;
 - Dolphin's pop-up warnings kept out of the way (they go to the log);
 - no freeze when closing a Wii game (Wii internet downloads, whose servers are long gone, are switched off).
+
+The Flycast build (Dreamcast) is the October 1 version plus one upstream fix: starting a Dreamcast game a second time without restarting RetroArch no longer crashes.
 
 The PCEE2 build (PS2) adds the **Metal** renderer used by most PS2 games, and smooth frame pacing on the Vulkan renderer after a pause or the Quick Menu.
 
