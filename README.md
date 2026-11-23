@@ -529,11 +529,12 @@ PS2 per-game files are in `~/Documents/RetroArch/system/pcsx2/gamesettings/<SERI
 | Metal Gear Solid 3 | 30 FPS (60 available) | |
 | Kingdom Hearts FM | 60 FPS + HP/MP fix | |
 | Kingdom Hearts II FM+ | 60 FPS | |
-| GTA III / Vice City / San Andreas | 60 FPS; GTA III and Vice City also: modern controls and right-stick camera (Zeroable), free aim with the PC crosshair, a soft lock onto the nearest visible ped and all weapons (custom) | San Andreas: swimming, aiming and trains act oddly above 30 FPS |
+| GTA III / Vice City / San Andreas | original frame rate (60 FPS available); GTA III and Vice City also: modern controls and right-stick camera (Zeroable), free aim with the PC crosshair, a soft lock onto the nearest visible ped and all weapons (custom) | at 60 FPS, San Andreas's swimming, aiming and trains act oddly |
 | Gran Turismo 3 / 4 | lighting performance patches | |
 | Burnout 3 / Revenge | progressive scan, MPH to KPH | |
 | SSX 3 | Metro slowdown fix, skip intros | |
 | God of War II | emulator-friendly waits | |
+| Xenoblade Chronicles (Wii) | original 30 FPS (60 FPS code available; it needs Cheats on and a 120% CPU clock) | |
 | Shadow of the Colossus (JP) | 30 FPS cap (custom; 45 FPS cap available) | TimeStretch; see its settings file for the heat tests |
 
 - **All other PS2 games:** Metal renderer, native resolution, the automatic per-game fixes from PCSX2's game database.
