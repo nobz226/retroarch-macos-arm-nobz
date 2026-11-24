@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 106 games across 9 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 106 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -50,6 +50,7 @@ A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 106 games 
 | Nintendo 64 | ParaLLEl N64 |
 | Super Nintendo | bsnes |
 | Dreamcast | Flycast (custom build, from `nobz226/flycast`) |
+| Sega Genesis / Mega Drive | Genesis Plus GX |
 | Capcom arcade and Neo Geo | FinalBurn Neo |
 
 The RetroArch app itself is a custom build from `nobz226/RetroArch`. On top of standard RetroArch it adds:
@@ -218,6 +219,12 @@ Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 | Grand Theft Auto 2 | `Grand Theft Auto 2.chd` |
 | Marvel vs. Capcom 2 - New Age of Heroes | `Marvel vs. Capcom 2 - New Age of Heroes.chd` |
 | SoulCalibur | `SoulCalibur.chd` |
+
+### Sega Genesis / Mega Drive — no games yet
+
+Core: **Sega - MS/GG/MD/CD (Genesis Plus GX)** · Folder: `roms/GENESIS/`
+
+Put Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) in the folder, then **Settings → Playlists → Manage Playlists → GENESIS → Refresh Playlist**. Each game gets the CRT shader. The same core also plays Master System, Game Gear and Sega CD games.
 
 ### Capcom arcade (CPS) — 6 games
 
