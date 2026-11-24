@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 106 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 122 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -196,19 +196,21 @@ Core: **Nintendo - Nintendo 64 (ParaLLEl N64)** · Folder: `roms/N64/`
 | The Legend of Zelda - Majora's Mask | `The Legend of Zelda - Majora's Mask.z64` |
 | The Legend of Zelda - Ocarina of Time | `The Legend of Zelda - Ocarina of Time.z64` |
 
-### Super Nintendo — 5 games
+### Super Nintendo — 7 games
 
 Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 
 | Game | File |
 |---|---|
+| Final Fight 2 | `Final Fight 2.sfc` |
+| Final Fight 3 | `Final Fight 3.sfc` |
 | Super Mario All-Stars | `Super Mario All-Stars.sfc` |
 | Super Mario World | `Super Mario World.sfc` |
 | Super Mario World 2 - Yoshi's Island | `Super Mario World 2 - Yoshi's Island.sfc` |
 | Super Metroid | `Super Metroid.sfc` |
 | The Legend of Zelda - A Link to the Past | `The Legend of Zelda - A Link to the Past.sfc` |
 
-### Dreamcast — 5 games
+### Dreamcast — 10 games
 
 Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 
@@ -216,26 +218,43 @@ Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 |---|---|
 | Capcom vs. SNK - Millennium Fight 2000 Pro | `Capcom vs. SNK - Millennium Fight 2000 Pro.chd` |
 | Capcom vs. SNK 2 - Millionaire Fighting 2001 | `Capcom vs. SNK 2 - Millionaire Fighting 2001.chd` |
+| Crazy Taxi | `Crazy Taxi.chd` |
 | Grand Theft Auto 2 | `Grand Theft Auto 2.chd` |
+| Jet Grind Radio | `Jet Grind Radio.chd` |
 | Marvel vs. Capcom 2 - New Age of Heroes | `Marvel vs. Capcom 2 - New Age of Heroes.chd` |
+| Power Stone 2 | `Power Stone 2.chd` |
+| Sonic Adventure | `Sonic Adventure.chd` |
+| Sonic Adventure 2 | `Sonic Adventure 2.chd` |
 | SoulCalibur | `SoulCalibur.chd` |
 
-### Sega Genesis / Mega Drive — no games yet
+### Sega Genesis / Mega Drive — 7 games
 
 Core: **Sega - MS/GG/MD/CD (Genesis Plus GX)** · Folder: `roms/GENESIS/`
 
-Put Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) in the folder, then **Settings → Playlists → Manage Playlists → GENESIS → Refresh Playlist**. Each game gets the CRT shader. The same core also plays Master System, Game Gear and Sega CD games.
+Add more Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) to the folder, then **Settings → Playlists → Manage Playlists → GENESIS → Refresh Playlist**. The same core also plays Master System, Game Gear and Sega CD games.
 
-### Capcom arcade (CPS) — 6 games
+| Game | File |
+|---|---|
+| Shinobi III - Return of the Ninja Master | `Shinobi III - Return of the Ninja Master.md` |
+| Sonic & Knuckles + Sonic The Hedgehog 3 | `Sonic & Knuckles + Sonic The Hedgehog 3.md` |
+| Sonic The Hedgehog | `Sonic The Hedgehog.md` |
+| Sonic The Hedgehog 2 | `Sonic The Hedgehog 2.md` |
+| Streets of Rage | `Streets of Rage.md` |
+| Streets of Rage 2 | `Streets of Rage 2.md` |
+| Streets of Rage 3 | `Streets of Rage 3.md` |
+
+### Capcom arcade (CPS) — 8 games
 
 Core: **Arcade (FinalBurn Neo)** · Folder: `roms/CPS/`
 
 | Game | File |
 |---|---|
 | Alien vs. Predator | `avspj.7z` |
+| Final Fight | `ffightj.7z` |
 | Marvel vs. Capcom - Clash of Super Heroes | `mvscj.7z` |
 | Street Fighter III 3rd Strike - Fight for the Future | `sfiii3n.zip` |
 | Street Fighter Zero 2 - Alpha | `sfz2alj.7z` |
+| Super Street Fighter II X - Grand Master Challenge | `ssf2xj.7z` |
 | The Punisher | `punisherj.7z` |
 | Vampire Savior - The Lord of Vampire | `vsavj.7z` |
 

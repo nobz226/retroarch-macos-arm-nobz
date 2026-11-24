@@ -20,6 +20,22 @@
   "scan_db_usage": 4,
   "items": [
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Final Fight 2.sfc",
+      "label": "Final Fight 2",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Final Fight 3.sfc",
+      "label": "Final Fight 3",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
+      "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Super Mario All-Stars.sfc",
       "label": "Super Mario All-Stars",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",

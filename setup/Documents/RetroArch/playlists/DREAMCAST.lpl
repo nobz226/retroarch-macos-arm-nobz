@@ -36,6 +36,14 @@
       "db_name": "DREAMCAST.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Crazy Taxi.chd",
+      "label": "Crazy Taxi",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "DREAMCAST.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Grand Theft Auto 2.chd",
       "label": "Grand Theft Auto 2",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
@@ -44,8 +52,40 @@
       "db_name": "DREAMCAST.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Jet Grind Radio.chd",
+      "label": "Jet Grind Radio",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
+      "core_name": "Sega - Dreamcast/Naomi (Flycast)",
+      "crc32": "00000000|crc",
+      "db_name": "DREAMCAST.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Marvel vs. Capcom 2 - New Age of Heroes.chd",
       "label": "Marvel vs. Capcom 2 - New Age of Heroes",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
+      "core_name": "Sega - Dreamcast/Naomi (Flycast)",
+      "crc32": "00000000|crc",
+      "db_name": "DREAMCAST.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Power Stone 2.chd",
+      "label": "Power Stone 2",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
+      "core_name": "Sega - Dreamcast/Naomi (Flycast)",
+      "crc32": "00000000|crc",
+      "db_name": "DREAMCAST.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Sonic Adventure.chd",
+      "label": "Sonic Adventure",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
+      "core_name": "Sega - Dreamcast/Naomi (Flycast)",
+      "crc32": "00000000|crc",
+      "db_name": "DREAMCAST.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/DREAMCAST/Sonic Adventure 2.chd",
+      "label": "Sonic Adventure 2",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/flycast_libretro.dylib",
       "core_name": "Sega - Dreamcast/Naomi (Flycast)",
       "crc32": "00000000|crc",
