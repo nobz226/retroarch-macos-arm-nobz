@@ -52,8 +52,24 @@
       "db_name": "PSX.lpl"
     },
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Castlevania - Symphony of the Night.chd",
+      "label": "Castlevania - Symphony of the Night",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Crash Bandicoot.chd",
       "label": "Crash Bandicoot",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
+      "core_name": "Sony - PlayStation (SwanStation)",
+      "crc32": "00000000|crc",
+      "db_name": "PSX.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Mega Man X4.chd",
+      "label": "Mega Man X4",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
       "core_name": "Sony - PlayStation (SwanStation)",
       "crc32": "00000000|crc",

@@ -22,16 +22,16 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Shinobi III - Return of the Ninja Master.md",
       "label": "Shinobi III - Return of the Ninja Master",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
+      "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
       "db_name": "GENESIS.lpl"
     },
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Sonic & Knuckles + Sonic The Hedgehog 3.md",
       "label": "Sonic & Knuckles + Sonic The Hedgehog 3",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
+      "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
       "db_name": "GENESIS.lpl"
     },
@@ -46,8 +46,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Sonic The Hedgehog 2.md",
       "label": "Sonic The Hedgehog 2",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
+      "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
       "db_name": "GENESIS.lpl"
     },

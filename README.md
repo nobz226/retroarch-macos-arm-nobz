@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 122 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 127 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -126,7 +126,7 @@ Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 | The Warriors | `The Warriors.iso` |
 | Tony Hawk's Underground | `Tony Hawk's Underground.iso` |
 
-### PlayStation — 10 games
+### PlayStation — 12 games
 
 Core: **Sony - PlayStation (SwanStation)** · Folder: `roms/PSX/`
 
@@ -136,7 +136,9 @@ Core: **Sony - PlayStation (SwanStation)** · Folder: `roms/PSX/`
 | Ape Escape | `Ape Escape.chd` |
 | Biohazard 2 | `Biohazard 2/Biohazard 2.m3u` |
 | Biohazard 3 - Last Escape | `Biohazard 3 - Last Escape.chd` |
+| Castlevania - Symphony of the Night | `Castlevania - Symphony of the Night.chd` |
 | Crash Bandicoot | `Crash Bandicoot.chd` |
+| Mega Man X4 | `Mega Man X4.chd` |
 | Metal Gear Solid - Integral | `Metal Gear Solid - Integral/Metal Gear Solid - Integral.m3u` |
 | R4 - Ridge Racer Type 4 | `R4 - Ridge Racer Type 4.chd` |
 | Spyro The Dragon | `Spyro The Dragon.chd` |
@@ -196,7 +198,7 @@ Core: **Nintendo - Nintendo 64 (ParaLLEl N64)** · Folder: `roms/N64/`
 | The Legend of Zelda - Majora's Mask | `The Legend of Zelda - Majora's Mask.z64` |
 | The Legend of Zelda - Ocarina of Time | `The Legend of Zelda - Ocarina of Time.z64` |
 
-### Super Nintendo — 7 games
+### Super Nintendo — 10 games
 
 Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 
@@ -204,6 +206,9 @@ Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 |---|---|
 | Final Fight 2 | `Final Fight 2.sfc` |
 | Final Fight 3 | `Final Fight 3.sfc` |
+| Mega Man X | `Mega Man X.sfc` |
+| Mega Man X2 | `Mega Man X2.sfc` |
+| Mega Man X3 | `Mega Man X3.sfc` |
 | Super Mario All-Stars | `Super Mario All-Stars.sfc` |
 | Super Mario World | `Super Mario World.sfc` |
 | Super Mario World 2 - Yoshi's Island | `Super Mario World 2 - Yoshi's Island.sfc` |
