@@ -52,24 +52,8 @@
       "db_name": "GENESIS.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Streets of Rage.md",
-      "label": "Streets of Rage",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
-      "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
-      "crc32": "00000000|crc",
-      "db_name": "GENESIS.lpl"
-    },
-    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Streets of Rage 2.md",
       "label": "Streets of Rage 2",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
-      "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
-      "crc32": "00000000|crc",
-      "db_name": "GENESIS.lpl"
-    },
-    {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Streets of Rage 3.md",
-      "label": "Streets of Rage 3",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
       "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",

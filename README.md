@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 135 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 131 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -198,7 +198,7 @@ Core: **Nintendo - Nintendo 64 (ParaLLEl N64)** · Folder: `roms/N64/`
 | The Legend of Zelda - Majora's Mask | `The Legend of Zelda - Majora's Mask.z64` |
 | The Legend of Zelda - Ocarina of Time | `The Legend of Zelda - Ocarina of Time.z64` |
 
-### Super Nintendo — 17 games
+### Super Nintendo — 15 games
 
 Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 
@@ -208,8 +208,6 @@ Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 | Donkey Kong Country | `Donkey Kong Country.sfc` |
 | Donkey Kong Country 2 - Diddy's Kong Quest | `Donkey Kong Country 2 - Diddy's Kong Quest.sfc` |
 | Donkey Kong Country 3 - Dixie Kong's Double Trouble! | `Donkey Kong Country 3 - Dixie Kong's Double Trouble!.sfc` |
-| Final Fight 2 | `Final Fight 2.sfc` |
-| Final Fight 3 | `Final Fight 3.sfc` |
 | Hoshi no Kirby 3 | `Hoshi no Kirby 3.sfc` |
 | Hoshi no Kirby Super Deluxe | `Hoshi no Kirby Super Deluxe.sfc` |
 | Mega Man X | `Mega Man X.sfc` |
@@ -239,7 +237,7 @@ Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 | Sonic Adventure 2 | `Sonic Adventure 2.chd` |
 | SoulCalibur | `SoulCalibur.chd` |
 
-### Sega Genesis / Mega Drive — 8 games
+### Sega Genesis / Mega Drive — 6 games
 
 Core: **Sega - MS/GG/MD/CD (Genesis Plus GX)** · Folder: `roms/GENESIS/`
 
@@ -251,9 +249,7 @@ Add more Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) to the folde
 | Sonic & Knuckles + Sonic The Hedgehog 3 | `Sonic & Knuckles + Sonic The Hedgehog 3.md` |
 | Sonic The Hedgehog | `Sonic The Hedgehog.md` |
 | Sonic The Hedgehog 2 | `Sonic The Hedgehog 2.md` |
-| Streets of Rage | `Streets of Rage.md` |
 | Streets of Rage 2 | `Streets of Rage 2.md` |
-| Streets of Rage 3 | `Streets of Rage 3.md` |
 | Thunder Force IV | `Thunder Force IV.md` |
 
 ### Capcom arcade (CPS) — 8 games

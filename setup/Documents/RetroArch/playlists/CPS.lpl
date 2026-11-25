@@ -62,8 +62,8 @@
     {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/CPS/ssf2xj.7z",
       "label": "Super Street Fighter II X - Grand Master Challenge",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
+      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/fbneo_libretro.dylib",
+      "core_name": "Arcade (FinalBurn Neo)",
       "crc32": "00000000|crc",
       "db_name": "CPS.lpl"
     },
