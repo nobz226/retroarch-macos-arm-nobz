@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 130 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 121 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -198,21 +198,12 @@ Core: **Nintendo - Nintendo 64 (ParaLLEl N64)** · Folder: `roms/N64/`
 | The Legend of Zelda - Majora's Mask | `The Legend of Zelda - Majora's Mask.z64` |
 | The Legend of Zelda - Ocarina of Time | `The Legend of Zelda - Ocarina of Time.z64` |
 
-### Super Nintendo — 15 games
+### Super Nintendo — 6 games
 
 Core: **Nintendo - SNES / SFC (bsnes)** · Folder: `roms/SNES/`
 
 | Game | File |
 |---|---|
-| Chrono Trigger | `Chrono Trigger.sfc` |
-| Donkey Kong Country | `Donkey Kong Country.sfc` |
-| Donkey Kong Country 2 - Diddy's Kong Quest | `Donkey Kong Country 2 - Diddy's Kong Quest.sfc` |
-| Donkey Kong Country 3 - Dixie Kong's Double Trouble! | `Donkey Kong Country 3 - Dixie Kong's Double Trouble!.sfc` |
-| Hoshi no Kirby 3 | `Hoshi no Kirby 3.sfc` |
-| Hoshi no Kirby Super Deluxe | `Hoshi no Kirby Super Deluxe.sfc` |
-| Mega Man X | `Mega Man X.sfc` |
-| Mega Man X2 | `Mega Man X2.sfc` |
-| Mega Man X3 | `Mega Man X3.sfc` |
 | Super Mario All-Stars | `Super Mario All-Stars.sfc` |
 | Super Mario World | `Super Mario World.sfc` |
 | Super Mario World 2 - Yoshi's Island | `Super Mario World 2 - Yoshi's Island.sfc` |
