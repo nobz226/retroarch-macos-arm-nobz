@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 131 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 130 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -237,7 +237,7 @@ Core: **Sega - Dreamcast/Naomi (Flycast)** · Folder: `roms/DREAMCAST/`
 | Sonic Adventure 2 | `Sonic Adventure 2.chd` |
 | SoulCalibur | `SoulCalibur.chd` |
 
-### Sega Genesis / Mega Drive — 6 games
+### Sega Genesis / Mega Drive — 5 games
 
 Core: **Sega - MS/GG/MD/CD (Genesis Plus GX)** · Folder: `roms/GENESIS/`
 
@@ -245,7 +245,6 @@ Add more Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) to the folde
 
 | Game | File |
 |---|---|
-| Shinobi III - Return of the Ninja Master | `Shinobi III - Return of the Ninja Master.md` |
 | Sonic & Knuckles + Sonic The Hedgehog 3 | `Sonic & Knuckles + Sonic The Hedgehog 3.md` |
 | Sonic The Hedgehog | `Sonic The Hedgehog.md` |
 | Sonic The Hedgehog 2 | `Sonic The Hedgehog 2.md` |
