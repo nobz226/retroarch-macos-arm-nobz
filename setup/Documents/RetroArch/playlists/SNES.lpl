@@ -20,6 +20,38 @@
   "scan_db_usage": 4,
   "items": [
     {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Chrono Trigger.sfc",
+      "label": "Chrono Trigger",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Donkey Kong Country.sfc",
+      "label": "Donkey Kong Country",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Donkey Kong Country 2 - Diddy's Kong Quest.sfc",
+      "label": "Donkey Kong Country 2 - Diddy's Kong Quest",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Donkey Kong Country 3 - Dixie Kong's Double Trouble!.sfc",
+      "label": "Donkey Kong Country 3 - Dixie Kong's Double Trouble!",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Final Fight 2.sfc",
       "label": "Final Fight 2",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
@@ -32,6 +64,22 @@
       "label": "Final Fight 3",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
       "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Hoshi no Kirby 3.sfc",
+      "label": "Hoshi no Kirby 3",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Hoshi no Kirby Super Deluxe.sfc",
+      "label": "Hoshi no Kirby Super Deluxe",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "SNES.lpl"
     },
@@ -88,6 +136,14 @@
       "label": "Super Metroid",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/bsnes_libretro.dylib",
       "core_name": "Nintendo - SNES / SFC (bsnes)",
+      "crc32": "00000000|crc",
+      "db_name": "SNES.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/SNES/Teenage Mutant Ninja Turtles - Turtles in Time.sfc",
+      "label": "Teenage Mutant Ninja Turtles - Turtles in Time",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
       "crc32": "00000000|crc",
       "db_name": "SNES.lpl"
     },

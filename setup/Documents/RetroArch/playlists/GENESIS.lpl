@@ -74,6 +74,14 @@
       "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
       "db_name": "GENESIS.lpl"
+    },
+    {
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Thunder Force IV.md",
+      "label": "Thunder Force IV",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "00000000|crc",
+      "db_name": "GENESIS.lpl"
     }
   ]
 }
