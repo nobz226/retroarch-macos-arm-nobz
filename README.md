@@ -1,6 +1,6 @@
 # RetroArch – MacOS-ARM-Nobz Edition
 
-A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 121 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
+A ready-to-play RetroArch setup for Apple Silicon Macs (M1/M2/M3/M4): 120 games across 10 systems, with every core, setting, shader, overlay, controller layout, box art and playlist already in place. You bring your own games and BIOS files.
 
 > **BIOS files and saves are not included.** Some systems need BIOS files from your own consoles; [section 5](#5-bios-files) lists each one and exactly where it goes.
 
@@ -126,7 +126,7 @@ Core: **Sony - PlayStation 2 (PCEE2)** · Folder: `roms/PS2/`
 | The Warriors | `The Warriors.iso` |
 | Tony Hawk's Underground | `Tony Hawk's Underground.iso` |
 
-### PlayStation — 12 games
+### PlayStation — 11 games
 
 Core: **Sony - PlayStation (SwanStation)** · Folder: `roms/PSX/`
 
@@ -138,7 +138,6 @@ Core: **Sony - PlayStation (SwanStation)** · Folder: `roms/PSX/`
 | Biohazard 3 - Last Escape | `Biohazard 3 - Last Escape.chd` |
 | Castlevania - Symphony of the Night | `Castlevania - Symphony of the Night.chd` |
 | Crash Bandicoot | `Crash Bandicoot.chd` |
-| Mega Man X4 | `Mega Man X4.chd` |
 | Metal Gear Solid - Integral | `Metal Gear Solid - Integral/Metal Gear Solid - Integral.m3u` |
 | R4 - Ridge Racer Type 4 | `R4 - Ridge Racer Type 4.chd` |
 | Spyro The Dragon | `Spyro The Dragon.chd` |

@@ -68,14 +68,6 @@
       "db_name": "PSX.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Mega Man X4.chd",
-      "label": "Mega Man X4",
-      "core_path": "@HOME@/Library/Application Support/RetroArch/cores/swanstation_libretro.dylib",
-      "core_name": "Sony - PlayStation (SwanStation)",
-      "crc32": "00000000|crc",
-      "db_name": "PSX.lpl"
-    },
-    {
       "path": "/Volumes/extSSD/Games/RetroArch/roms/PSX/Metal Gear Solid - Integral/Metal Gear Solid - Integral.m3u",
       "label": "Metal Gear Solid - Integral",
       "core_path": "DETECT",
