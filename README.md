@@ -71,7 +71,7 @@ The Dolphin build (GameCube and Wii) adds:
 - Dolphin's pop-up warnings kept out of the way (they go to the log);
 - no freeze when closing a Wii game (Wii internet downloads, whose servers are long gone, are switched off).
 
-The Flycast build (Dreamcast) is the October 1 version plus one upstream fix: starting a Dreamcast game a second time without restarting RetroArch no longer crashes. It also fixes shadows on the Mac GPU: in Jet Grind Radio, a shadow around the camera (under a bridge, along a wall) no longer flickers as large black areas, and the shadows stay.
+The Flycast build (Dreamcast) is the October 1 version plus one upstream fix: starting a Dreamcast game a second time without restarting RetroArch no longer crashes. It also fixes shadows on the Mac GPU: in Jet Grind Radio, a shadow around the camera (under a bridge, along a wall) no longer flickers as large black areas, and the shadows stay. That fix is offered to Flycast as [pull request #2637](https://github.com/flyinghead/flycast/pull/2637).
 
 The PCEE2 build (PS2) adds the **Metal** renderer used by most PS2 games, and smooth frame pacing on the Vulkan renderer after a pause or the Quick Menu.
 
