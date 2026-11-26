@@ -235,11 +235,11 @@ Add more Genesis / Mega Drive games (`.md`, `.bin`, `.gen`, `.smd`) to the folde
 
 | Game | File |
 |---|---|
-| Sonic & Knuckles + Sonic The Hedgehog 3 | `Sonic & Knuckles + Sonic The Hedgehog 3.md` |
+| Sonic & Knuckles | `Sonic & Knuckles.md` |
 | Sonic The Hedgehog | `Sonic The Hedgehog.md` |
 | Sonic The Hedgehog 2 | `Sonic The Hedgehog 2.md` |
+| Sonic The Hedgehog 3 | `Sonic The Hedgehog 3.md` |
 | Streets of Rage 2 | `Streets of Rage 2.md` |
-| Thunder Force IV | `Thunder Force IV.md` |
 
 ### Capcom arcade (CPS) — 8 games
 

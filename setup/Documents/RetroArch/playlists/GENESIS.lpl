@@ -20,8 +20,8 @@
   "scan_db_usage": 4,
   "items": [
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Sonic & Knuckles + Sonic The Hedgehog 3.md",
-      "label": "Sonic & Knuckles + Sonic The Hedgehog 3",
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Sonic & Knuckles.md",
+      "label": "Sonic & Knuckles",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
       "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
@@ -44,16 +44,16 @@
       "db_name": "GENESIS.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Streets of Rage 2.md",
-      "label": "Streets of Rage 2",
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Sonic The Hedgehog 3.md",
+      "label": "Sonic The Hedgehog 3",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
       "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
       "db_name": "GENESIS.lpl"
     },
     {
-      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Thunder Force IV.md",
-      "label": "Thunder Force IV",
+      "path": "/Volumes/extSSD/Games/RetroArch/roms/GENESIS/Streets of Rage 2.md",
+      "label": "Streets of Rage 2",
       "core_path": "@HOME@/Library/Application Support/RetroArch/cores/genesis_plus_gx_libretro.dylib",
       "core_name": "Sega - MS/GG/MD/CD (Genesis Plus GX)",
       "crc32": "00000000|crc",
